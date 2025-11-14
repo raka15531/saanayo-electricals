@@ -92,7 +92,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-gray-900 dark:text-white mb-1">Email Address</h3>
-                    <p className="text-gray-600 dark:text-gray-300">kasakuelectricals2021@gmail.com</p>
+                    <p className="text-gray-600 dark:text-gray-300">saanayoelectricindustries@gmail.com</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400">We respond within 24 hours</p>
                   </div>
                 </div>

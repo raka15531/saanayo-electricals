@@ -567,7 +567,7 @@ export default function ProductDetail() {
                     <span>+91 9667846784</span>
                   </a>
                   <a
-                    href="mailto:kasakuelectricals2021@gmail.com"
+                    href="mailto:saanayoelectricindustries@gmail.com"
                     className="flex items-center space-x-3 bg-white text-blue-600 py-3 px-4 rounded-lg font-semibold transition-all hover:bg-blue-50"
                   >
                     <span>✉️</span>
