@@ -206,15 +206,16 @@ export default function Products() {
                     >
                       View Details
                     </Link>
-                    <a
-                      href={`https://wa.me/919667846784?text=Hi, I'm interested in ${product.name}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-green-600 hover:bg-green-700 text-white p-2 rounded-lg transition-colors"
-                      title="Contact on WhatsApp"
+                    <button
+                    onClick={() => {
+                        const message = `Hi, I'm interested in ${product.name}. Please provide more details and pricing.`
+                        window.open(`https://wa.me/919667846784?text=${encodeURIComponent(message)}`, '_blank')
+                    }}
+                    className="bg-green-600 hover:bg-green-700 text-white p-2 rounded-lg transition-colors cursor-pointer"
+                    title="Contact on WhatsApp"
                     >
-                      💬
-                    </a>
+                    💬
+                    </button>
                   </div>
                 </div>
               </motion.div>

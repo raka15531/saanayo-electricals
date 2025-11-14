@@ -6,6 +6,19 @@ import { MapPin, Phone, Mail, Clock, Instagram, Twitter, Facebook } from 'lucide
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
+  const handleCall = (phoneNumber: string) => {
+    window.open(`tel:${phoneNumber}`, '_self')
+  }
+
+  const handleWhatsApp = () => {
+    const message = "Hi, I'm interested in your electrical safety products. Please provide more information."
+    window.open(`https://wa.me/919667846784?text=${encodeURIComponent(message)}`, '_blank')
+  }
+
+  const handleEmail = (email: string) => {
+    window.open(`mailto:${email}`, '_self')
+  }
+
   return (
     <footer className="bg-gray-900 text-white">
       {/* Main Footer */}
@@ -57,17 +70,32 @@ export default function Footer() {
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
+                
+                {/* WhatsApp Button in Footer */}
+                <button
+                  onClick={handleWhatsApp}
+                  className="bg-gray-800 hover:bg-green-600 text-white p-2 rounded-lg transition-colors duration-300 cursor-pointer"
+                  aria-label="WhatsApp"
+                >
+                  <span className="text-lg">💬</span>
+                </button>
               </div>
 
               <div className="flex items-center space-x-4 text-gray-300">
-                <div className="flex items-center space-x-2">
+                <button 
+                  onClick={() => handleCall('+919667846784')}
+                  className="flex items-center space-x-2 hover:text-white transition-colors cursor-pointer"
+                >
                   <Phone className="w-4 h-4" />
                   <span>+91 9667846784</span>
-                </div>
-                <div className="flex items-center space-x-2">
+                </button>
+                <button 
+                  onClick={() => handleEmail('saanayoelectricindustries@gmail.com')}
+                  className="flex items-center space-x-2 hover:text-white transition-colors cursor-pointer"
+                >
                   <Mail className="w-4 h-4" />
                   <span>saanayoelectricindustries@gmail.com</span>
-                </div>
+                </button>
               </div>
             </div>
 
@@ -110,21 +138,35 @@ export default function Footer() {
                   </div>
                 </div>
                 
-                <div className="flex items-center space-x-3">
-                  <Phone className="w-5 h-5 text-primary-400" />
-                  <div>
-                    <p>+91 9667846784</p>
-                    <p>+91 7838756681</p>
-                    <p>+91 8010628458</p>
-                  </div>
+                <div className="space-y-2">
+                  <button 
+                    onClick={() => handleCall('+919667846784')}
+                    className="flex items-center space-x-3 hover:text-white transition-colors cursor-pointer w-full text-left"
+                  >
+                    <Phone className="w-5 h-5 text-primary-400 flex-shrink-0" />
+                    <div>
+                      <p>+91 9667846784</p>
+                      <p>+91 7838756681</p>
+                      <p>+91 8010628458</p>
+                    </div>
+                  </button>
                 </div>
                 
-                <div className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-primary-400" />
-                  <div>
-                    <p>saanayoelectricindustries@gmail.com</p>
-                    <p>support@kasakuelectricals.com</p>
-                  </div>
+                <div className="space-y-2">
+                  <button 
+                    onClick={() => handleEmail('saanayoelectricindustries@gmail.com')}
+                    className="flex items-center space-x-3 hover:text-white transition-colors cursor-pointer w-full text-left"
+                  >
+                    <Mail className="w-5 h-5 text-primary-400 flex-shrink-0" />
+                    <span>saanayoelectricindustries@gmail.com</span>
+                  </button>
+                  <button 
+                    onClick={() => handleEmail('support@kasakuelectricals.com')}
+                    className="flex items-center space-x-3 hover:text-white transition-colors cursor-pointer w-full text-left"
+                  >
+                    <Mail className="w-5 h-5 text-primary-400 flex-shrink-0" />
+                    <span>support@kasakuelectricals.com</span>
+                  </button>
                 </div>
                 
                 <div className="flex items-center space-x-3">

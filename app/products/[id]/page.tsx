@@ -454,15 +454,16 @@ export default function ProductDetail() {
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <a
-                  href={`https://wa.me/919667846784?text=Hi, I'm interested in ${product.name}. Please provide detailed specifications and pricing.`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 bg-green-600 hover:bg-green-700 text-white text-center py-4 px-6 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-3"
+                <button
+                onClick={() => {
+                    const message = `Hi, I'm interested in ${product.name}. Please provide detailed specifications and pricing.`
+                    window.open(`https://wa.me/919667846784?text=${encodeURIComponent(message)}`, '_blank')
+                }}
+                className="flex-1 bg-green-600 hover:bg-green-700 text-white text-center py-3 px-6 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2 cursor-pointer"
                 >
-                  <span className="text-lg">💬</span>
-                  <span>Get Quote on WhatsApp</span>
-                </a>
+                <span>💬</span>
+                <span>Get Quote on WhatsApp</span>
+                </button>
                 <a
                   href="tel:+919667846784"
                   className="bg-blue-600 hover:bg-blue-700 text-white py-4 px-6 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center space-x-3"
