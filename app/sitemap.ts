@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'weekly',
       priority: 1,
     },
     {
@@ -35,6 +35,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
+      url: `${baseUrl}/earthing-in-faridabad`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/earthing-electrodes`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
@@ -50,13 +56,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/chemical-earthing`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.8,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/gel-earthing`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/earthing-electrode-faridabad`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/copper-bonded-rods`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/lightning-arresters`,
@@ -87,6 +105,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.8,
     },
     // Individual product detail pages
     {
@@ -137,5 +161,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
+    // Blog posts
+    ...['what-is-gel-earthing', 'chemical-vs-gel-earthing', 'select-best-earthing-electrode', 
+        'copper-bonded-rod-manufacturers', 'earthing-protects-home-surges', 'industrial-earthing-requirements']
+      .map(slug => ({
+        url: `${baseUrl}/blog/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+      })),
   ]
 }

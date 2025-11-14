@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { ArrowRight, Search } from 'lucide-react'
 import { useState } from 'react'
+import { Metadata } from 'next'
 
 const products = [
   {
@@ -71,6 +72,12 @@ const products = [
     image: '/api/placeholder/400/300'
   }
 ]
+
+export const metadata: Metadata = {
+  title: 'Earthing Electrodes Price List | Chemical & Gel Earthing Systems',
+  description: 'Complete earthing electrodes price list. Chemical earthing, gel earthing, copper bonded rods, GI electrodes with specifications and applications.',
+  keywords: 'earthing electrodes price, chemical earthing price, gel earthing price, copper bonded rod price, GI earthing electrode price, earthing system cost',
+}
 
 export default function Products() {
   const [searchTerm, setSearchTerm] = useState('')

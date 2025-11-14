@@ -2,8 +2,12 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import ClientLayout from './ClientLayout'
+import AdSense from '@/components/AdSense'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 // Primary keywords for Saanayo Electricals
 const primaryKeywords = [
@@ -36,14 +40,14 @@ const primaryKeywords = [
 // ✅ UPDATE METADATA HERE:
 export const metadata: Metadata = {
   title: {
-    default: 'Earthing Electrodes Manufacturer | Copper Bonded Rods, Chemical Earthing - Saanayo Electricals',
-    template: '%s | Earthing Solutions Manufacturer'
+    default: 'Earthing Electrodes Manufacturer in Faridabad | Chemical & Gel Earthing Systems',
+    template: '%s | Saanayo Electricals - Premium Earthing Solutions'
   },
-  description: 'Leading earthing electrodes manufacturer in India. Premium copper bonded rods, chemical earthing systems, GI pipes & lightning protection. ISO certified. Get free consultation +91 9667846784',
+  description: 'Leading earthing electrodes manufacturer in Faridabad. Premium chemical earthing, gel earthing, copper bonded rods & grounding systems. Get best prices with 15+ years warranty.',
   keywords: primaryKeywords,
-  authors: [{ name: 'Saanayo Electricals Pvt Ltd' }],
-  creator: 'Saanayo Electricals Pvt Ltd',
-  publisher: 'Saanayo Electricals Pvt Ltd',
+  authors: [{ name: 'Saanayo Electricals' }],
+  creator: 'Saanayo Electricals',
+  publisher: 'Saanayo Electricals',
   formatDetection: {
     email: false,
     address: false,
@@ -52,29 +56,6 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://saanayoelectricals.com'),
   alternates: {
     canonical: '/',
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'en_IN',
-    url: 'https://saanayoelectricals.com',
-    siteName: 'Saanayo Electricals Pvt Ltd',
-    title: 'Earthing Electrodes Manufacturer | Copper Bonded Rods, Chemical Earthing',
-    description: 'Leading manufacturer of earthing electrodes, copper bonded rods, chemical earthing systems in Faridabad, India',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Saanayo Electricals - Earthing Electrodes Manufacturer',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Earthing Electrodes Manufacturer | Saanayo Electricals',
-    description: 'Premium earthing electrodes, copper bonded rods, chemical earthing systems manufacturer in India',
-    images: ['/og-image.jpg'],
-    creator: '@saanayoelectricals',
   },
   robots: {
     index: true,
@@ -87,9 +68,31 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  openGraph: {
+    type: 'website',
+    locale: 'en_IN',
+    url: 'https://saanayoelectricals.com',
+    siteName: 'Saanayo Electricals',
+    title: 'Earthing Electrodes Manufacturer in Faridabad | Chemical & Gel Earthing',
+    description: 'Premium earthing electrodes, chemical earthing systems, copper bonded rods manufacturer in Faridabad.',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Saanayo Electricals - Earthing Electrodes Manufacturer',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Saanayo Electricals - Earthing Electrodes Manufacturer',
+    description: 'Premium electrical safety solutions in Faridabad',
+    images: ['/og-image.jpg'],
+    creator: '@saanayoelectricals',
+  },
   verification: {
-    // Add Google Search Console verification here
-    // google: 'your-google-verification-code',
+    google: 'YOUR_GOOGLE_SEARCH_CONSOLE_CODE',
   },
   category: 'Industrial & Electrical Equipment',
 }
@@ -183,16 +186,20 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* ✅ GOOGLE ADSENSE META TAG */}
+        <meta name="google-adsense-account" content="ca-pub-8120935387035949" />
+        
         {/* ✅ JSON-LD STRUCTURED DATA - This stays in the head */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <link rel="canonical" href="https://saanayoelectricals.com" />
+        <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_CODE" />
         <meta name="geo.region" content="IN-HR" />
         <meta name="geo.placename" content="Faridabad" />
-        <meta name="geo.position" content="28.4069;77.3180" />
-        <meta name="ICBM" content="28.4069, 77.3180" />
+        <meta name="geo.position" content="28.40689987576518;77.3154119753337" />
+        <meta name="ICBM" content="28.40689987576518, 77.3154119753337" />
         <meta name="theme-color" content="#2563eb" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -203,6 +210,9 @@ export default function RootLayout({
         {/* Preload critical resources for better performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        
+        {/* ✅ ADSENSE COMPONENT */}
+        <AdSense />
       </head>
       <body className={inter.className}>
         <ClientLayout>{children}</ClientLayout>

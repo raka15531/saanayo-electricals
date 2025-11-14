@@ -276,6 +276,75 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SEO Content Section */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+              Premium Earthing Electrodes Manufacturer in Faridabad
+            </h2>
+            
+            <div className="prose prose-lg max-w-none">
+              <p className="text-gray-600 mb-6">
+                <strong>Saanayo Electricals</strong> is a leading <strong>earthing electrodes manufacturer in Faridabad</strong>, 
+                providing premium <strong>chemical earthing systems</strong>, <strong>gel earthing electrodes</strong>, and 
+                <strong>copper bonded rods</strong> for industrial, commercial, and residential applications.
+              </p>
+
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                Why Choose Our Earthing Solutions?
+              </h3>
+              
+              <ul className="text-gray-600 mb-6 space-y-2">
+                <li>• <strong>Chemical Earthing:</strong> Maintenance-free operation with stable ground resistance</li>
+                <li>• <strong>Gel Earthing:</strong> Advanced conductive gel for superior performance</li>
+                <li>• <strong>Copper Bonded Rods:</strong> 250-micron copper coating for excellent conductivity</li>
+                <li>• <strong>GI Earthing Electrodes:</strong> Cost-effective solution with corrosion resistance</li>
+              </ul>
+
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                Applications of Our Earthing Systems
+              </h3>
+              
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Industrial Applications</h4>
+                  <ul className="text-gray-600 text-sm space-y-1">
+                    <li>• Factories and manufacturing plants</li>
+                    <li>• Power substations</li>
+                    <li>• Telecommunication towers</li>
+                    <li>• Oil and gas industry</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Commercial & Residential</h4>
+                  <ul className="text-gray-600 text-sm space-y-1">
+                    <li>• High-rise buildings</li>
+                    <li>• Housing complexes</li>
+                    <li>• Hospitals and institutions</li>
+                    <li>• Data centers</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-blue-50 rounded-xl p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  Looking for Earthing Electrode Price?
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Get competitive pricing for <strong>chemical earthing electrode price</strong>, 
+                  <strong>gel earthing electrode price</strong>, and <strong>copper bonded rod price</strong>. 
+                  We offer the best rates in Faridabad with complete installation services.
+                </p>
+                <Link href="/contact" className="btn-primary">
+                  Get Price Quote
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Section */}
       <section className="section-padding bg-blue-600 text-white">
         <div className="container-custom">

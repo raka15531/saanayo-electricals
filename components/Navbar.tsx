@@ -26,7 +26,11 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
 
   const navItems = [
     { name: 'Home', href: '/' },
+    { name: 'Chemical Earthing', href: '/chemical-earthing' },
+    { name: 'Gel Earthing', href: '/gel-earthing' },
+    { name: 'Faridabad', href: '/earthing-in-faridabad' },
     { name: 'About', href: '/about' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Products', href: '/products' },
     { name: 'Contact', href: '/contact' },
     { name: 'Generator', href: '/generator' },
