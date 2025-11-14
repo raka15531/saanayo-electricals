@@ -5,9 +5,9 @@ import { Phone, Mail, Instagram, Twitter, Facebook } from 'lucide-react'
 
 export default function TopBanner() {
   const phoneNumbers = [
-    { number: '+919667846784', display: '+91 9667846784' },
-    { number: '+917838756681', display: '+91 7838756681' },
-    { number: '+918010628458', display: '+91 8010628458' }
+    { number: '+919667846784', display: '9667846784' },
+    { number: '+917838756681', display: '7838756681' },
+    { number: '+918010628458', display: '8010628458' }
   ]
 
   const handleCall = (phoneNumber: string) => {
@@ -24,7 +24,7 @@ export default function TopBanner() {
   }
 
   return (
-    <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-2 relative overflow-hidden border-b border-white/20">
+    <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-2 relative overflow-hidden border-b border-white/20 h-[72px] flex items-center">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div 

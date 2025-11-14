@@ -132,9 +132,20 @@ export default function Footer() {
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-5 h-5 mt-0.5 text-primary-400" />
                   <div>
-                    <p>SCF-112, Sector 28</p>
-                    <p>Faridabad, Haryana - 121002</p>
-                    <p>India</p>
+                    <a 
+                      href="https://maps.app.goo.gl/fSXcH9JaTYWkbDdY7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-white transition-colors cursor-pointer block"
+                    >
+                      <p>SCF-112, Sector 28</p>
+                      <p>Faridabad, Haryana - 121002</p>
+                      <p>India</p>
+                      <p className="text-blue-400 text-sm mt-1 flex items-center space-x-1">
+                        <span>📍</span>
+                        <span>View on Google Maps</span>
+                      </p>
+                    </a>
                   </div>
                 </div>
                 

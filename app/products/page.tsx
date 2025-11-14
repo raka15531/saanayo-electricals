@@ -88,7 +88,7 @@ export default function Products() {
   )
 
   return (
-    <div className="pt-20">
+    <div>
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-br from-primary-50 to-blue-100 dark:from-gray-900 dark:to-primary-900/20">
         <div className="container-custom text-center">

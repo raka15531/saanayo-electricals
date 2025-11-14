@@ -85,7 +85,7 @@ const faqData = [
 
 export default function Home() {
   return (
-    <div className="pt-16">
+    <div>
       {/* Hero Section with Particles */}
       <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 relative overflow-hidden">
         <ParticlesBackground />

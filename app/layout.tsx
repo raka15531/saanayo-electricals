@@ -8,28 +8,38 @@ const inter = Inter({ subsets: ['latin'] })
 // Primary keywords for Saanayo Electricals
 const primaryKeywords = [
   'earthing electrodes',
-  'copper bonded rods',
+  'earthing system', 
   'chemical earthing',
+  'copper bonded rods',
+  'gi earthing pipes',
+  'lightning protection',
+  'grounding system',
+  'earthing manufacturer India',
+  'electrical earthing',
+  'earthing solutions',
+  'earthing electrodes manufacturer',
+  'copper earthing rods',
+  'gi earthing electrodes',
+  'chemical earthing system',
   'lightning arresters',
   'electrical panels',
   'surge protection devices',
-  'gi earthing pipes',
   'grounding accessories',
   'electrical safety solutions',
   'earthing system manufacturer India',
   'lightning protection system',
   'electrical safety equipment',
   'industrial earthing solutions',
-  'copper earthing rods',
   'electrical grounding system'
 ].join(', ')
 
+// ✅ UPDATE METADATA HERE:
 export const metadata: Metadata = {
   title: {
-    default: 'Saanayo Electricals Pvt Ltd | Premium Earthing & Electrical Safety Solutions',
-    template: '%s | Saanayo Electricals'
+    default: 'Earthing Electrodes Manufacturer | Copper Bonded Rods, Chemical Earthing - Saanayo Electricals',
+    template: '%s | Earthing Solutions Manufacturer'
   },
-  description: 'Leading manufacturer of earthing electrodes, copper bonded rods, chemical earthing systems, lightning arresters, and electrical safety equipment in Faridabad, India. ISO certified quality.',
+  description: 'Leading earthing electrodes manufacturer in India. Premium copper bonded rods, chemical earthing systems, GI pipes & lightning protection. ISO certified. Get free consultation +91 9667846784',
   keywords: primaryKeywords,
   authors: [{ name: 'Saanayo Electricals Pvt Ltd' }],
   creator: 'Saanayo Electricals Pvt Ltd',
@@ -48,21 +58,21 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: 'https://saanayoelectricals.com',
     siteName: 'Saanayo Electricals Pvt Ltd',
-    title: 'Saanayo Electricals | Premium Electrical Safety Solutions',
-    description: 'Manufacturer of earthing electrodes, copper bonded rods, chemical earthing, lightning arresters in Faridabad, India.',
+    title: 'Earthing Electrodes Manufacturer | Copper Bonded Rods, Chemical Earthing',
+    description: 'Leading manufacturer of earthing electrodes, copper bonded rods, chemical earthing systems in Faridabad, India',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Saanayo Electricals - Electrical Safety Solutions',
+        alt: 'Saanayo Electricals - Earthing Electrodes Manufacturer',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Saanayo Electricals | Electrical Safety Solutions',
-    description: 'Premium earthing electrodes, copper bonded rods, and electrical safety equipment manufacturer.',
+    title: 'Earthing Electrodes Manufacturer | Saanayo Electricals',
+    description: 'Premium earthing electrodes, copper bonded rods, chemical earthing systems manufacturer in India',
     images: ['/og-image.jpg'],
     creator: '@saanayoelectricals',
   },
@@ -84,12 +94,12 @@ export const metadata: Metadata = {
   category: 'Industrial & Electrical Equipment',
 }
 
+// ✅ UPDATE JSON-LD SCHEMA HERE:
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ElectricalBusiness',
-  name: 'Saanayo Electricals Pvt Ltd',
-  image: 'https://saanayoelectricals.com/logo.png',
-  description: 'Manufacturer and supplier of premium earthing electrodes, copper bonded rods, GI earthing pipes, chemical earthing systems, lightning arresters, electrical panels, surge protection devices and grounding accessories.',
+  name: 'Saanayo Electricals - Earthing Electrodes Manufacturer',
+  description: 'Leading manufacturer of earthing electrodes, copper bonded rods, and chemical earthing systems in Faridabad, India',
   url: 'https://saanayoelectricals.com',
   telephone: '+91-9667846784',
   email: 'saanayoelectricindustries@gmail.com',
@@ -114,68 +124,54 @@ const jsonLd = {
   areaServed: 'India',
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Electrical Safety Products',
+    name: 'Earthing and Electrical Safety Products',
     itemListElement: [
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Product',
-          name: 'Earthing Electrodes'
+          name: 'Earthing Electrodes',
+          description: 'GI and Copper Earthing Electrodes for electrical grounding systems'
         }
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Product',
-          name: 'Copper Bonded Rods'
+          name: 'Copper Bonded Rods',
+          description: 'Premium copper bonded earthing rods with 250-micron coating'
         }
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Product',
-          name: 'Chemical Earthing Systems'
+          name: 'Chemical Earthing Systems',
+          description: 'Maintenance-free chemical earthing systems for all soil conditions'
         }
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Product',
-          name: 'Lightning Arresters'
+          name: 'GI Earthing Pipes',
+          description: 'Heavy-duty GI earthing pipes for industrial applications'
         }
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Product',
-          name: 'Electrical Panels'
-        }
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Product',
-          name: 'Surge Protection Devices'
-        }
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Product',
-          name: 'GI Earthing Pipes'
-        }
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Product',
-          name: 'Grounding Accessories'
+          name: 'Lightning Arresters',
+          description: 'Lightning protection systems and surge protection devices'
         }
       }
     ]
   },
   sameAs: [
-    // Add social media links here when available
+    'https://www.instagram.com/kasakuelectricalspvtltd/',
+    'https://x.com/KasakuPvt',
+    'https://www.facebook.com/people/Kasaku-Electricals-Pvt-Ltd/100086154097375/'
   ]
 }
 
@@ -187,6 +183,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* ✅ JSON-LD STRUCTURED DATA - This stays in the head */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -202,6 +199,10 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/manifest.json" />
+        
+        {/* Preload critical resources for better performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       </head>
       <body className={inter.className}>
         <ClientLayout>{children}</ClientLayout>

@@ -28,7 +28,7 @@ const values = [
 
 export default function About() {
   return (
-    <div className="pt-20">
+    <div>
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-primary-900/20">
         <div className="container-custom">

@@ -251,22 +251,44 @@ export default function Contact() {
           </motion.div>
 
           <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
-            <div className="h-96 bg-gradient-to-br from-primary-100 to-blue-100 dark:from-primary-900/20 dark:to-blue-900/20 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-16 h-16 text-primary-600 dark:text-primary-400 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  Google Maps Integration
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400">
-                  Map will be integrated here for production deployment
-                </p>
+            <div className="h-96 bg-gray-200 dark:bg-gray-700 relative">
+              {/* Google Maps Embed */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.725177236682!2d77.3154119753337!3d28.40689987576518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc15c67c7d27%3A0xfac7d18b0e3b7b7b!2sSaanayo%20Electricals%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Saanayo Electricals Location"
+                className="absolute inset-0"
+              ></iframe>
+              
+              {/* Fallback for iframe loading */}
+              <div className="absolute inset-0 flex items-center justify-center bg-gray-200 dark:bg-gray-700">
+                <div className="text-center">
+                  <div className="text-4xl mb-4">📍</div>
+                  <p className="text-gray-600 dark:text-gray-400">Loading map...</p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Map Actions */}
+            <div className="p-6 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+              <div className="flex flex-col sm:flex-row gap-4 justify-between items-center">
+                <div className="text-gray-700 dark:text-gray-300">
+                  <p className="font-semibold">Saanayo Electricals Pvt Ltd</p>
+                  <p>SCF-112, Sector 28, Faridabad, Haryana 121002</p>
+                </div>
                 <a
-                  href="https://maps.google.com/?q=SCF-112,Sector+28,Faridabad,Haryana,121002"
+                  href="https://maps.app.goo.gl/fSXcH9JaTYWkbDdY7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-4 bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg transition-colors"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center space-x-2"
                 >
-                  Open in Google Maps
+                  <span>📍</span>
+                  <span>Open in Google Maps</span>
                 </a>
               </div>
             </div>

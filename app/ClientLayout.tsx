@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Chatbot from '../components/Chatbot'
-import TopBanner from '../components/TopBanner' // ADD THIS IMPORT
+import TopBanner from '../components/TopBanner'
 
 export default function ClientLayout({
   children,
@@ -52,9 +52,13 @@ export default function ClientLayout({
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
-      <TopBanner /> {/* ADD THIS LINE */}
+      <TopBanner />
+      {/* Fixed navbar with proper spacing */}
       <Navbar theme={theme} toggleTheme={toggleTheme} />
-      <main>{children}</main>
+      {/* Main content with safe margin */}
+      <main className="pt-32 md:pt-28"> {/* Increased padding to prevent overlap */}
+        {children}
+      </main>
       <Footer />
       <Chatbot />
     </div>
