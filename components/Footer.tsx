@@ -32,7 +32,7 @@ export default function Footer() {
                   <span className="text-white font-bold">SE</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Saanayo Electricals</h3>
+                  <h3 className="text-xl font-bold">Sannayo Electric Limited</h3>
                   <p className="text-gray-300">Powering Safety. Grounding Reliability.</p>
                 </div>
               </div>
@@ -198,7 +198,7 @@ export default function Footer() {
         <div className="container-custom">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Saanayo Electricals Pvt Ltd. All rights reserved.
+              © {currentYear} Sannayo Electric Limited. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm text-gray-400">
               <Link href="/privacy" className="hover:text-white transition-colors">
