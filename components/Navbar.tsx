@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Sun, Moon, Menu, X } from 'lucide-react'
+import { Sun, Moon, Menu, X, Instagram, Twitter, Facebook } from 'lucide-react'
 
 interface NavbarProps {
   theme: 'light' | 'dark'
@@ -75,6 +75,34 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
               </Link>
             ))}
             
+            {/* Social Media Icons */}
+            <div className="flex items-center space-x-2">
+              <a
+                href="https://www.instagram.com/kasakuelectricalspvtltd/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400 transition-colors"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a
+                href="https://x.com/KasakuPvt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300 transition-colors"
+              >
+                <Twitter className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.facebook.com/people/Kasaku-Electricals-Pvt-Ltd/100086154097375/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              >
+                <Facebook className="w-4 h-4" />
+              </a>
+            </div>
+
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
@@ -134,6 +162,34 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                     {item.name}
                   </Link>
                 ))}
+                
+                {/* Mobile Social Media Icons */}
+                <div className="flex justify-center space-x-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                  <a
+                    href="https://www.instagram.com/kasakuelectricalspvtltd/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400 transition-colors"
+                  >
+                    <Instagram className="w-5 h-5" />
+                  </a>
+                  <a
+                    href="https://x.com/KasakuPvt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                  >
+                    <Twitter className="w-5 h-5" />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/people/Kasaku-Electricals-Pvt-Ltd/100086154097375/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  >
+                    <Facebook className="w-5 h-5" />
+                  </a>
+                </div>
               </div>
             </motion.div>
           )}

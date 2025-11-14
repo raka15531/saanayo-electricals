@@ -181,6 +181,15 @@ export default function Products() {
                     </div>
                   </div>
 
+                  {/* Pricing Section */}
+                  <div className="mb-4 p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
+                    <div className="flex items-center justify-center space-x-2">
+                      <span className="text-yellow-600 dark:text-yellow-400 font-semibold text-sm">
+                        💰 For Pricing Contact for Best Offer
+                      </span>
+                    </div>
+                  </div>
+
                   {/* Applications */}
                   <div className="mb-6">
                     <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Applications:</h4>

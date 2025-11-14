@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Chatbot from '../components/Chatbot'
+import TopBanner from '../components/TopBanner' // ADD THIS IMPORT
 
 export default function ClientLayout({
   children,
@@ -51,6 +52,7 @@ export default function ClientLayout({
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+      <TopBanner /> {/* ADD THIS LINE */}
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main>{children}</main>
       <Footer />

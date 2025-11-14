@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { MapPin, Phone, Mail, Clock } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock, Instagram, Twitter, Facebook } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -27,6 +27,38 @@ export default function Footer() {
                 Leading manufacturer and supplier of premium earthing and electrical safety solutions 
                 in Faridabad, India. Trusted by industries and homes nationwide.
               </p>
+              
+              {/* Social Media Links */}
+              <div className="flex space-x-4 mb-6">
+                <a
+                  href="https://www.instagram.com/kasakuelectricalspvtltd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-800 hover:bg-pink-600 text-white p-2 rounded-lg transition-colors duration-300"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://x.com/KasakuPvt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-800 hover:bg-blue-400 text-white p-2 rounded-lg transition-colors duration-300"
+                  aria-label="Twitter"
+                >
+                  <Twitter className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.facebook.com/people/Kasaku-Electricals-Pvt-Ltd/100086154097375/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-800 hover:bg-blue-600 text-white p-2 rounded-lg transition-colors duration-300"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+              </div>
+
               <div className="flex items-center space-x-4 text-gray-300">
                 <div className="flex items-center space-x-2">
                   <Phone className="w-4 h-4" />
@@ -77,14 +109,24 @@ export default function Footer() {
                     <p>India</p>
                   </div>
                 </div>
+                
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-primary-400" />
-                  <span>+91 9667846784</span>
+                  <div>
+                    <p>+91 9667846784</p>
+                    <p>+91 7838756681</p>
+                    <p>+91 8010628458</p>
+                  </div>
                 </div>
+                
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-primary-400" />
-                  <span>saanayoelectricindustries@gmail.com</span>
+                  <div>
+                    <p>saanayoelectricindustries@gmail.com</p>
+                    <p>support@kasakuelectricals.com</p>
+                  </div>
                 </div>
+                
                 <div className="flex items-center space-x-3">
                   <Clock className="w-5 h-5 text-primary-400" />
                   <div>

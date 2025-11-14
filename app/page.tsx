@@ -8,6 +8,7 @@ import FAQSchema from '../components/FAQSchema'
 
 const products = [
   {
+    id: 1,
     name: 'Earthing Electrodes',
     description: 'High-performance electrodes for optimal grounding systems with excellent conductivity',
     features: ['High conductivity', 'Corrosion resistant', 'Long lifespan', 'Easy installation'],
@@ -15,6 +16,7 @@ const products = [
     specs: ['Material: Copper/GI', 'Size: 16mm-40mm', 'Length: 1m-3m']
   },
   {
+    id: 2,
     name: 'Copper Bonded Rods',
     description: 'Premium copper bonded rods ensuring superior earthing with 99.9% pure copper coating',
     features: ['99.9% pure copper', 'Uniform coating', 'Excellent conductivity', 'Corrosion proof'],
@@ -22,6 +24,7 @@ const products = [
     specs: ['Coating: 250 microns', 'Size: 14mm-25mm', 'Standards: IS 3043']
   },
   {
+    id: 3,
     name: 'Chemical Earthing',
     description: 'Advanced chemical earthing systems for enhanced performance and maintenance-free operation',
     features: ['Low resistance', 'Maintenance-free', 'Long durability', 'Stable performance'],
@@ -217,7 +220,7 @@ export default function Home() {
                   </div>
 
                   {/* Specifications */}
-                  <div className="mb-6">
+                  <div className="mb-4">
                     <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Specifications:</h4>
                     <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
                       {product.specs.map((spec, idx) => (
@@ -226,10 +229,19 @@ export default function Home() {
                     </ul>
                   </div>
 
+                  {/* Pricing Section */}
+                  <div className="mb-6 p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
+                    <div className="flex items-center justify-center space-x-2">
+                      <span className="text-yellow-600 dark:text-yellow-400 font-semibold text-sm">
+                        💰 For Pricing Contact for Best Offer
+                      </span>
+                    </div>
+                  </div>
+
                   {/* Action Buttons */}
                   <div className="flex space-x-3">
                     <Link
-                      href="/products"
+                      href={`/products/${product.id}`}
                       className="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center py-2 px-4 rounded-lg font-semibold transition-colors"
                     >
                       View Details
