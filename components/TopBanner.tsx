@@ -1,26 +1,12 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Phone, Mail, Instagram, Twitter, Facebook } from 'lucide-react'
+import { Instagram, Twitter, Facebook } from 'lucide-react'
 
 export default function TopBanner() {
-  const phoneNumbers = [
-    { number: '+919667846784', display: '9667846784' },
-    { number: '+917838756681', display: '7838756681' },
-    { number: '+918010628458', display: '8010628458' }
-  ]
-
-  const handleCall = (phoneNumber: string) => {
-    window.open(`tel:${phoneNumber}`, '_self')
-  }
-
   const handleWhatsApp = () => {
     const message = "Hi, I'm interested in your electrical safety products. Please provide more information."
     window.open(`https://wa.me/919667846784?text=${encodeURIComponent(message)}`, '_blank')
-  }
-
-  const handleEmail = () => {
-    window.open('mailto:support@kasakuelectricals.com', '_self')
   }
 
   return (
@@ -56,45 +42,8 @@ export default function TopBanner() {
 
       <div className="container-custom relative z-10">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-3">
-          {/* Left Side - Contact Info */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 text-sm w-full lg:w-auto">
-            {/* Phone Numbers */}
-            <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3">
-              {phoneNumbers.map((phone, index) => (
-                <motion.button
-                  key={phone.number}
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  onClick={() => handleCall(phone.number)}
-                  className="flex items-center gap-1 bg-white/10 backdrop-blur-sm px-2 py-1 rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 cursor-pointer group"
-                >
-                  <Phone className="w-3 h-3 flex-shrink-0" />
-                  <span className={`text-xs sm:text-sm ${index === 0 ? 'font-semibold' : ''}`}>
-                    {phone.display}
-                  </span>
-                  <span className="text-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs">
-                    📞
-                  </span>
-                </motion.button>
-              ))}
-            </div>
-
-            {/* Email */}
-            <motion.button
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-              onClick={handleEmail}
-              className="flex items-center gap-1 bg-white/10 backdrop-blur-sm px-2 py-1 rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 cursor-pointer group"
-            >
-              <Mail className="w-3 h-3 flex-shrink-0" />
-              <span className="text-xs sm:text-sm">support@kasakuelectricals.com</span>
-              <span className="text-blue-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs">
-                ✉️
-              </span>
-            </motion.button>
-          </div>
+          {/* Left Side - Empty for spacing balance */}
+          <div className="w-full lg:w-auto"></div>
 
           {/* Right Side - Social Media & Offer */}
           <div className="flex items-center gap-3 w-full lg:w-auto justify-center lg:justify-end">
