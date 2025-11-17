@@ -1,0 +1,23 @@
+{
+  "name": "Sanaayo Electric Industries - Earthing Electrodes Manufacturer",
+  "short_name": "Sanaayo Electric",
+  "description": "Leading manufacturer of Green Earth Electrodes with conductive concrete technology in Faridabad",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["industrial", "business", "manufacturing"]
+}

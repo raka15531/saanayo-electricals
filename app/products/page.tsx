@@ -4,6 +4,10 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { ArrowRight, Search } from 'lucide-react'
 import { useState } from 'react'
+<<<<<<< HEAD
+=======
+import Image from 'next/image'
+>>>>>>> d683034 (Initial commit: Add existing website project)
 
 // Products data
 const products = [
@@ -13,7 +17,11 @@ const products = [
     description: 'High-performance electrodes for optimal grounding systems with excellent conductivity and corrosion resistance',
     features: ['High conductivity', 'Corrosion resistant', 'Long lifespan', 'Easy installation'],
     applications: ['Industrial Plants', 'Commercial Buildings', 'Residential Complexes'],
+<<<<<<< HEAD
     image: '/api/placeholder/400/300'
+=======
+    image: '/images/earthing-electrodes.jpg'
+>>>>>>> d683034 (Initial commit: Add existing website project)
   },
   {
     id: 2,
@@ -21,7 +29,11 @@ const products = [
     description: 'Premium copper bonded rods ensuring superior earthing with 99.9% pure copper coating',
     features: ['99.9% pure copper', 'Uniform coating', 'Excellent conductivity', 'Corrosion proof'],
     applications: ['Power Stations', 'Telecom Towers', 'Lightning Protection'],
+<<<<<<< HEAD
     image: '/api/placeholder/400/300'
+=======
+    image: '/images/copper-bonded-rods.jpg'
+>>>>>>> d683034 (Initial commit: Add existing website project)
   },
   {
     id: 3,
@@ -29,7 +41,11 @@ const products = [
     description: 'Advanced chemical earthing for enhanced performance and maintenance-free operation',
     features: ['Low resistance', 'Maintenance-free', 'Long durability', 'Stable performance'],
     applications: ['High-rise Buildings', 'Data Centers', 'Sensitive Equipment'],
+<<<<<<< HEAD
     image: '/api/placeholder/400/300'
+=======
+    image: '/images/chemical-earthing-systems.jpg'
+>>>>>>> d683034 (Initial commit: Add existing website project)
   },
   {
     id: 4,
@@ -37,7 +53,11 @@ const products = [
     description: 'Reliable protection against lightning strikes and electrical surges',
     features: ['Quick response', 'High durability', 'Easy installation', 'Multiple ratings'],
     applications: ['Buildings', 'Transmission Lines', 'Equipment Protection'],
+<<<<<<< HEAD
     image: '/api/placeholder/400/300'
+=======
+    image: '/images/lightning-arresters.jpg'
+>>>>>>> d683034 (Initial commit: Add existing website project)
   },
   {
     id: 5,
@@ -45,7 +65,11 @@ const products = [
     description: 'Custom electrical panels designed for safety, efficiency, and reliability',
     features: ['ISI certified', 'Custom designs', 'Safety compliant', 'Durable construction'],
     applications: ['Industrial Use', 'Commercial Use', 'Residential Use'],
+<<<<<<< HEAD
     image: '/api/placeholder/400/300'
+=======
+    image: '/images/electrical-panels.jpg'
+>>>>>>> d683034 (Initial commit: Add existing website project)
   },
   {
     id: 6,
@@ -53,7 +77,11 @@ const products = [
     description: 'Advanced devices to protect equipment from voltage spikes and surges',
     features: ['Fast acting', 'Multiple ratings', 'Reliable performance', 'Easy maintenance'],
     applications: ['Electronic Equipment', 'Power Systems', 'Communication Systems'],
+<<<<<<< HEAD
     image: '/api/placeholder/400/300'
+=======
+    image: '/images/surge-protection-devices.jpg'
+>>>>>>> d683034 (Initial commit: Add existing website project)
   },
   {
     id: 7,
@@ -61,7 +89,11 @@ const products = [
     description: 'Galvanized Iron earthing pipes for robust and reliable grounding solutions',
     features: ['Heavy duty', 'Rust proof', 'Long lasting', 'Cost effective'],
     applications: ['Industrial Grounding', 'Lightning Protection', 'General Earthing'],
+<<<<<<< HEAD
     image: '/api/placeholder/400/300'
+=======
+    image: '/images/gi-earthing-pipes.jpg'
+>>>>>>> d683034 (Initial commit: Add existing website project)
   },
   {
     id: 8,
@@ -69,7 +101,27 @@ const products = [
     description: 'Complete range of accessories for comprehensive earthing systems',
     features: ['Complete solution', 'Easy installation', 'Durable materials', 'Various sizes'],
     applications: ['All Earthing Systems', 'Maintenance Kits', 'Replacement Parts'],
+<<<<<<< HEAD
     image: '/api/placeholder/400/300'
+=======
+    image: '/images/grounding-accessories.jpg'
+  },
+  {
+    id: 9,
+    name: 'Chemical Earthing Electrodes',
+    description: 'Advanced chemical earthing electrodes with conductive compound for superior performance',
+    features: ['Maintenance-free', 'Stable resistance', 'Long service life', 'All soil types'],
+    applications: ['Rocky Areas', 'Dry Regions', 'Industrial Applications'],
+    image: '/images/chemical-earthing.jpg'
+  },
+  {
+    id: 10,
+    name: 'Solid Copper Rods',
+    description: 'Premium solid copper rods for maximum conductivity and corrosion resistance',
+    features: ['99.9% pure copper', 'Maximum conductivity', 'Corrosion resistant', 'Long lifespan'],
+    applications: ['Critical Installations', 'Data Centers', 'Sensitive Equipment'],
+    image: '/images/copper-rod.jpg'
+>>>>>>> d683034 (Initial commit: Add existing website project)
   }
 ]
 
@@ -155,8 +207,27 @@ export default function ProductsPage() {
                 className="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-600"
               >
                 {/* Product Image */}
+<<<<<<< HEAD
                 <div className="h-48 bg-gradient-to-br from-primary-500 to-blue-600 flex items-center justify-center">
                   <div className="text-6xl text-white opacity-80">⚡</div>
+=======
+                <div className="h-48 bg-gray-100 dark:bg-gray-600 relative overflow-hidden">
+                  <Image 
+                    src={product.image} 
+                    alt={product.name}
+                    fill
+                    className="object-cover hover:scale-105 transition-transform duration-300"
+                    onError={(e) => {
+                      // Fallback to emoji if image fails to load
+                      e.currentTarget.style.display = 'none'
+                      e.currentTarget.parentElement.innerHTML = `
+                        <div class="w-full h-full bg-gradient-to-br from-primary-500 to-blue-600 flex items-center justify-center">
+                          <div class="text-6xl text-white opacity-80">⚡</div>
+                        </div>
+                      `
+                    }}
+                  />
+>>>>>>> d683034 (Initial commit: Add existing website project)
                 </div>
 
                 {/* Product Content */}
@@ -187,7 +258,11 @@ export default function ProductsPage() {
                   <div className="mb-4 p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
                     <div className="flex items-center justify-center space-x-2">
                       <span className="text-yellow-600 dark:text-yellow-400 font-semibold text-sm">
+<<<<<<< HEAD
                         💰 For Pricing Contact for Best Offer
+=======
+                        💰 Contact for Best Pricing
+>>>>>>> d683034 (Initial commit: Add existing website project)
                       </span>
                     </div>
                   </div>
@@ -212,10 +287,17 @@ export default function ProductsPage() {
                       href={`https://wa.me/919667846784?text=Hi, I'm interested in ${product.name}`}
                       target="_blank"
                       rel="noopener noreferrer"
+<<<<<<< HEAD
                       className="bg-green-600 hover:bg-green-700 text-white p-2 rounded-lg transition-colors"
                       title="Contact on WhatsApp"
                     >
                       💬
+=======
+                      className="bg-green-600 hover:bg-green-700 text-white p-2 rounded-lg transition-colors flex items-center justify-center"
+                      title="Contact on WhatsApp"
+                    >
+                      <span className="text-sm">💬</span>
+>>>>>>> d683034 (Initial commit: Add existing website project)
                     </a>
                   </div>
                 </div>

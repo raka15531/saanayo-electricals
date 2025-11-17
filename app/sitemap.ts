@@ -29,7 +29,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+<<<<<<< HEAD
       url: `${baseUrl}/generator`,
+=======
+      url: `${baseUrl}/technical-specs`,
+>>>>>>> d683034 (Initial commit: Add existing website project)
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.6,

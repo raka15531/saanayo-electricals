@@ -33,7 +33,11 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
     { name: 'Blog', href: '/blog' },
     { name: 'Products', href: '/products' },
     { name: 'Contact', href: '/contact' },
+<<<<<<< HEAD
     { name: 'Generator', href: '/generator' },
+=======
+    { name: 'technical-specs', href: '/technical-specs' },
+>>>>>>> d683034 (Initial commit: Add existing website project)
   ]
 
   return (
@@ -45,6 +49,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
           ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg' 
           : 'bg-white dark:bg-gray-900'
       }`}
+<<<<<<< HEAD
       style={{ marginTop: '72px' }} // Match top banner height
     >
       <nav className="container-custom">
@@ -53,6 +58,20 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
           <Link href="/" className="flex items-center space-x-3 group min-w-0 flex-shrink">
             <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-primary-800 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow flex-shrink-0">
               <span className="text-white font-bold text-lg">SE</span>
+=======
+      style={{ marginTop: '72px' }}
+    >
+      <nav className="container-custom">
+        <div className="flex justify-between items-center py-4">
+          {/* Logo */}
+          <Link href="/" className="flex items-center space-x-3 group min-w-0 flex-shrink">
+            <div className="w-12 h-12 rounded-xl overflow-hidden flex-shrink-0 shadow-lg group-hover:shadow-xl transition-shadow">
+              <img
+                src="/images/logo.png"
+                alt="Saanayo Electricals Logo"
+                className="w-full h-full object-cover"
+              />
+>>>>>>> d683034 (Initial commit: Add existing website project)
             </div>
             <div className="min-w-0">
               <h1 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary-600 transition-colors truncate">
@@ -64,7 +83,11 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
             </div>
           </Link>
 
+<<<<<<< HEAD
           {/* Desktop Navigation - Improved spacing */}
+=======
+          {/* Desktop Navigation */}
+>>>>>>> d683034 (Initial commit: Add existing website project)
           <div className="hidden lg:flex items-center space-x-4 xl:space-x-6 flex-shrink-0">
             {navItems.map((item) => (
               <Link
@@ -79,8 +102,13 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                 {item.name}
               </Link>
             ))}
+<<<<<<< HEAD
             
             {/* Social Media Icons - Compact design */}
+=======
+
+            {/* Social Media Icons */}
+>>>>>>> d683034 (Initial commit: Add existing website project)
             <div className="flex items-center space-x-1 border-l border-gray-300 dark:border-gray-600 pl-3 ml-2">
               <a
                 href="https://www.instagram.com/kasakuelectricalspvtltd/"
@@ -110,18 +138,26 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                 <Facebook className="w-4 h-4" />
               </a>
             </div>
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> d683034 (Initial commit: Add existing website project)
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
               className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors flex-shrink-0"
               aria-label="Toggle theme"
             >
+<<<<<<< HEAD
               {theme === 'light' ? (
                 <Moon className="w-5 h-5" />
               ) : (
                 <Sun className="w-5 h-5" />
               )}
+=======
+              {theme === 'light' ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
+>>>>>>> d683034 (Initial commit: Add existing website project)
             </button>
           </div>
 
@@ -132,11 +168,15 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
               className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
               aria-label="Toggle theme"
             >
+<<<<<<< HEAD
               {theme === 'light' ? (
                 <Moon className="w-5 h-5" />
               ) : (
                 <Sun className="w-5 h-5" />
               )}
+=======
+              {theme === 'light' ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
+>>>>>>> d683034 (Initial commit: Add existing website project)
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -172,7 +212,11 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                     {item.name}
                   </Link>
                 ))}
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> d683034 (Initial commit: Add existing website project)
                 {/* Mobile Social Links */}
                 <div className="flex justify-center space-x-4 pt-4 border-t border-gray-200 dark:border-gray-700">
                   <a
@@ -207,4 +251,8 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
       </nav>
     </motion.header>
   )
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d683034 (Initial commit: Add existing website project)
