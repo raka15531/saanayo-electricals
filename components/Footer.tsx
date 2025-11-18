@@ -39,7 +39,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center justify-center space-x-2">
               <span className="text-lg">📅</span>
-              <span>Est. 2025</span>
+              <span>Est. 2015</span>
             </div>
           </div>
         </div>
