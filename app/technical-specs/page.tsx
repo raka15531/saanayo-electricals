@@ -258,12 +258,13 @@ export default function TechnicalSpecs() {
                       className="object-cover rounded-lg"
                       onError={(e) => {
                         e.currentTarget.style.display = 'none'
-                        e.currentTarget.parentElement.innerHTML = `
+                        if (e.currentTarget.parentElement) {
+                            e.currentTarget.parentElement.innerHTML = `
                           <div class="w-full h-full bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
                             <div class="text-4xl text-white opacity-80">⚡</div>
                           </div>
                         `
-                      }}
+                      }}}
                     />
                   </div>
 
