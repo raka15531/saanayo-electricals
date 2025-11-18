@@ -43,11 +43,7 @@ const products = [
       'Environmentally friendly',
       'Quick and easy installation'
     ],
-<<<<<<< HEAD
-    image: '/images/gi-earthing-electrode.jpg',
-=======
     image: '/images/earthing-electrodes.jpg',
->>>>>>> d683034 (Initial commit: Add existing website project)
     price: '₹ 450 - ₹ 1,200 per piece',
     delivery: '7-10 days',
     warranty: '5 years'
@@ -89,11 +85,7 @@ const products = [
       'Maintenance-free operation',
       'Cost-effective compared to solid copper'
     ],
-<<<<<<< HEAD
     image: '/images/copper-bonded-rod.jpg',
-=======
-    image: '/images/copper-bonded-rods.jpg',
->>>>>>> d683034 (Initial commit: Add existing website project)
     price: '₹ 800 - ₹ 2,500 per piece',
     delivery: '5-7 days',
     warranty: '10 years'
@@ -135,11 +127,7 @@ const products = [
       'Enhanced safety for sensitive equipment',
       'Lower overall lifecycle cost'
     ],
-<<<<<<< HEAD
     image: '/images/chemical-earthing.jpg',
-=======
-    image: '/images/chemical-earthing-systems.jpg',
->>>>>>> d683034 (Initial commit: Add existing website project)
     price: '₹ 3,500 - ₹ 8,000 per system',
     delivery: '10-12 days',
     warranty: '15 years'
@@ -181,11 +169,7 @@ const products = [
       'Compliance with safety standards',
       'Long service life'
     ],
-<<<<<<< HEAD
     image: '/images/lightning-arrester.jpg',
-=======
-    image: '/images/lightning-arresters.jpg',
->>>>>>> d683034 (Initial commit: Add existing website project)
     price: '₹ 1,200 - ₹ 5,000 per unit',
     delivery: '7-10 days',
     warranty: '5 years'
@@ -227,11 +211,7 @@ const products = [
       'Space-efficient design',
       'Future expansion capability'
     ],
-<<<<<<< HEAD
     image: '/images/electrical-panel.jpg',
-=======
-    image: '/images/electrical-panels.jpg',
->>>>>>> d683034 (Initial commit: Add existing website project)
     price: '₹ 8,000 - ₹ 50,000 per panel',
     delivery: '15-20 days',
     warranty: '2 years'
@@ -273,11 +253,7 @@ const products = [
       'Fire hazard prevention',
       'Cost-effective protection'
     ],
-<<<<<<< HEAD
     image: '/images/surge-protection.jpg',
-=======
-    image: '/images/surge-protection-devices.jpg',
->>>>>>> d683034 (Initial commit: Add existing website project)
     price: '₹ 1,500 - ₹ 8,000 per unit',
     delivery: '5-7 days',
     warranty: '3 years'
@@ -319,11 +295,7 @@ const products = [
       'Reliable performance',
       'Economic solution'
     ],
-<<<<<<< HEAD
     image: '/images/gi-earthing-pipe.jpg',
-=======
-    image: '/images/gi-earthing-pipes.jpg',
->>>>>>> d683034 (Initial commit: Add existing website project)
     price: '₹ 600 - ₹ 2,000 per piece',
     delivery: '7-10 days',
     warranty: '7 years'
@@ -369,93 +341,6 @@ const products = [
     price: '₹ 2,000 - ₹ 8,000 per kit',
     delivery: '3-5 days',
     warranty: '2 years'
-<<<<<<< HEAD
-=======
-  },
-  {
-    id: 9,
-    name: 'Chemical Earthing Electrode',
-    category: 'Chemical Earthing',
-    description: 'Advanced Chemical Earthing Electrodes with conductive compound for superior grounding performance.',
-    fullDescription: 'Our Chemical Earthing Electrodes are designed with special conductive compounds that maintain optimal moisture levels and provide consistent low resistance grounding in all soil conditions.',
-    features: [
-      'Maintenance-free operation',
-      'Stable ground resistance',
-      'Long service life',
-      'Easy installation',
-      'Suitable for all soil types',
-      'Environmentally friendly'
-    ],
-    specifications: {
-      'Material': 'Copper / GI',
-      'Diameter': '50mm, 75mm, 100mm',
-      'Length': '1.5m, 2m, 3m',
-      'Backfill Compound': 'Special conductive mixture',
-      'Resistance Value': '< 1 Ohm',
-      'Standards': 'IS 3043, IEC 62561'
-    },
-    applications: [
-      'Rocky soil areas',
-      'Dry regions',
-      'Industrial plants',
-      'Telecom towers',
-      'Residential buildings',
-      'Power stations'
-    ],
-    benefits: [
-      'Consistent performance',
-      'No maintenance required',
-      'Long lifespan',
-      'Reliable in all weather',
-      'Cost-effective solution'
-    ],
-    image: '/images/chemical-earthing',
-    price: '₹ 2,500 - ₹ 6,000 per unit',
-    delivery: '7-10 days',
-    warranty: '10 years'
-  },
-  {
-    id: 10,
-    name: 'Solid Copper Earthing Rod',
-    category: 'Copper Rods',
-    description: 'Premium Solid Copper Earthing Rods for maximum conductivity and corrosion resistance.',
-    fullDescription: 'Our Solid Copper Earthing Rods are made from 99.9% pure copper, offering the highest level of conductivity and exceptional corrosion resistance for critical applications.',
-    features: [
-      '99.9% pure copper',
-      'Maximum conductivity',
-      'Excellent corrosion resistance',
-      'Long service life',
-      'Easy to install',
-      'Maintenance-free'
-    ],
-    specifications: {
-      'Material': 'Pure Copper (99.9%)',
-      'Diameter': '12mm, 16mm, 20mm, 25mm',
-      'Length': '1.2m, 2.4m, 3.0m',
-      'Purity': '99.9%',
-      'Conductivity': '100% IACS',
-      'Standards': 'IS 3043, BS 7430'
-    },
-    applications: [
-      'Critical installations',
-      'Data centers',
-      'Hospital buildings',
-      'Telecom sites',
-      'Lightning protection',
-      'Sensitive equipment'
-    ],
-    benefits: [
-      'Highest conductivity',
-      'Superior corrosion resistance',
-      'Long-term reliability',
-      'Lowest resistance',
-      'Premium performance'
-    ],
-    image: '/images/copper-rod',
-    price: '₹ 1,200 - ₹ 4,000 per piece',
-    delivery: '5-7 days',
-    warranty: '15 years'
->>>>>>> d683034 (Initial commit: Add existing website project)
   }
 ]
 
