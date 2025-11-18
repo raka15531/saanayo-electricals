@@ -220,16 +220,18 @@ export default function Home() {
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-300"
                     onError={(e) => {
-                      // Fallback to gradient background if image fails to load
+                      // Fallback to gradient background if image fails to load - FIXED NULL SAFETY
                       e.currentTarget.style.display = 'none'
-                      e.currentTarget.parentElement.innerHTML = `
-                        <div class="w-full h-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
-                          <div class="text-6xl text-white opacity-80">⚡</div>
-                          <div class="absolute bottom-4 right-4 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 text-white text-sm">
-                            Featured
+                      if (e.currentTarget.parentElement) {
+                        e.currentTarget.parentElement.innerHTML = `
+                          <div class="w-full h-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+                            <div class="text-6xl text-white opacity-80">⚡</div>
+                            <div class="absolute bottom-4 right-4 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 text-white text-sm">
+                              Featured
+                            </div>
                           </div>
-                        </div>
-                      `
+                        `
+                      }
                     }}
                   />
                   <div className="absolute bottom-4 right-4 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 text-white text-sm">
@@ -525,4 +527,4 @@ export default function Home() {
       </section>
     </div>
   )
-}"// Build fix" 
+}
