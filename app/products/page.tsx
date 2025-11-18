@@ -3,8 +3,8 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { ArrowRight, Shield, Zap, Award, Clock } from 'lucide-react'
-import ParticlesBackground from '../components/ParticlesBackground'
-import FAQSchema from '../components/FAQSchema'
+import ParticlesBackground from "@/components/ParticlesBackground";
+import FAQSchema from "@/components/FAQSchema";
 import Image from 'next/image'
 
 const products = [
