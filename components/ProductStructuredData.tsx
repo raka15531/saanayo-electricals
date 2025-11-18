@@ -21,21 +21,21 @@ export default function ProductStructuredData({ product }: ProductStructuredData
       '@type': 'Product',
       name: product.name,
       description: product.description,
-      image: `https://saanayoelectricals.com${product.image}`,
+      image: `https://sanaayoelectricals.in${product.image}`,
       brand: {
         '@type': 'Brand',
         name: 'Saanayo Electricals'
       },
       offers: {
         '@type': 'Offer',
-        url: `https://saanayoelectricals.com/products`,
+        url: `https://sanaayoelectricals.in/products`,
         priceCurrency: 'INR',
         availability: 'https://schema.org/InStock'
       },
       manufacturer: {
         '@type': 'Organization',
         name: 'Saanayo Electricals Pvt Ltd',
-        url: 'https://saanayoelectricals.com'
+        url: 'https://sanaayoelectricals.in'
       }
     }
 

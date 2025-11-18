@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/admin/'],
     },
-    sitemap: 'https://saanayoelectricals.com/sitemap.xml',
+    sitemap: 'https://sanaayoelectricals.in/sitemap.xml',
   }
 }

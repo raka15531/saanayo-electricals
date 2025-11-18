@@ -6,7 +6,7 @@ export default function EnhancedSchema() {
     "@type": "ElectricalSupplyStore",
     "name": "Saanayo Electricals Pvt Ltd",
     "description": "Premium earthing electrodes manufacturer and supplier in Faridabad",
-    "url": "https://saanayoelectricals.com",
+    "url": "https://sanaayoelectricals.in",
     "telephone": "+919667846784",
     "email": "saanayoelectricindustries@gmail.com",
     "address": {
