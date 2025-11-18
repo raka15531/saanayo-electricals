@@ -139,13 +139,15 @@ export default function GelEarthing() {
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-300"
                     onError={(e) => {
-                      // Fallback if image doesn't exist
+                      // Fallback if image doesn't exist - FIXED NULL SAFETY
                       e.currentTarget.style.display = 'none'
-                      e.currentTarget.parentElement.innerHTML = `
-                        <div class="w-full h-full bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center">
-                          <div class="text-6xl text-white">💧</div>
-                        </div>
-                      `
+                      if (e.currentTarget.parentElement) {
+                        e.currentTarget.parentElement.innerHTML = `
+                          <div class="w-full h-full bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center">
+                            <div class="text-6xl text-white">💧</div>
+                          </div>
+                        `
+                      }
                     }}
                   />
                 </div>
