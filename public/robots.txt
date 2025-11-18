@@ -1,0 +1,53 @@
+cat > public/robots.txt << 'EOF'
+User-agent: *
+Allow: /
+
+# Block these paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /.next/
+Disallow: /node_modules/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cdn-cgi/
+Disallow: /_vercel/
+
+# Allow important paths for SEO
+Allow: /sitemap.xml
+Allow: /sitemap/
+Allow: /blog/
+Allow: /products/
+Allow: /contact/
+Allow: /about/
+
+# Crawl delay (optional - for large sites)
+# Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://saanayo-electricals.vercel.app/sitemap.xml
+
+# Google Ads bot specific rules
+User-agent: AdsBot-Google
+Allow: /
+
+# Google image bot
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Other search engines
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+EOF
