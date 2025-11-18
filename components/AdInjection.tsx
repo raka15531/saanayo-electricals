@@ -2,12 +2,6 @@
 
 import { useEffect } from 'react'
 
-declare global {
-  interface Window {
-    adsbygoogle: any[]
-  }
-}
-
 export default function AdInjection() {
   useEffect(() => {
     // Wait a bit for the content to render
@@ -43,8 +37,9 @@ export default function AdInjection() {
             container.innerHTML = adHtml
           }
           
-          // Push to adsbygoogle
-          ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+          // Push to adsbygoogle without type declaration
+          const adsbygoogle = (window as any).adsbygoogle || []
+          adsbygoogle.push({})
         })
         
       } catch (err) {
