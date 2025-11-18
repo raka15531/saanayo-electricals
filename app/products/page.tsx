@@ -222,7 +222,8 @@ export default function Home() {
                     onError={(e) => {
                       // Fallback to gradient background if image fails to load
                       e.currentTarget.style.display = 'none'
-                      e.currentTarget.parentElement.innerHTML = `
+                      if (e.currentTarget.parentElement) {
+                        e.currentTarget.parentElement.innerHTML = `
                         <div class="w-full h-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
                           <div class="text-6xl text-white opacity-80">⚡</div>
                           <div class="absolute bottom-4 right-4 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 text-white text-sm">
@@ -230,7 +231,7 @@ export default function Home() {
                           </div>
                         </div>
                       `
-                    }}
+                    }}}
                   />
                   <div className="absolute bottom-4 right-4 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 text-white text-sm">
                     Featured
