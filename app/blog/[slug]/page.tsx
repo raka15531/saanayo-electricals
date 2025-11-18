@@ -1,30 +1,239 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-<<<<<<< HEAD
-
-const blogPosts = {
-  'what-is-gel-earthing': {
-    title: 'What is Gel Earthing? Benefits and Installation Process Explained',
-    description: 'Complete guide to gel earthing systems, their advantages over traditional earthing, installation process, and maintenance requirements.',
-    content: `
-      <h2>Understanding Gel Earthing Systems</h2>
-      <p>Gel earthing is an advanced grounding technology that uses special conductive gel compounds to maintain low soil resistance...</p>
-      <!-- Full article content -->
-    `,
-    date: 'January 15, 2024',
-    readTime: '5 min read'
-  },
-  // Add other blog posts here
-=======
 import AdSense from '@/components/AdSense'
 import AdaptiveAd from '@/components/AdaptiveAd'
 import AdInjection from '@/components/AdInjection'
 import { injectAdsIntoContent } from '@/lib/ads-helper'
 
 const blogPosts = {
-  // ... existing posts (chemical-earthing-price-cost-india, chemical-earthing-procedure-installation, etc.)
-  // ... previous posts remain the same ...
+  'chemical-earthing-price-cost-india': {
+    title: 'Chemical Earthing Price 2024 - Complete Cost Guide for House & Industrial Projects',
+    description: 'Get detailed chemical earthing price for residential and industrial projects. Learn about chemical earthing cost factors, material prices, and installation charges across India.',
+    content: `
+      <h2>Chemical Earthing Price 2024 - Complete Cost Analysis</h2>
+      <p>Understanding <strong>chemical earthing price</strong> is crucial for budget planning in electrical safety projects. This comprehensive guide covers all cost factors for residential, commercial, and industrial applications.</p>
+      
+      <h3>Factors Affecting Chemical Earthing Price</h3>
+      <ul>
+        <li><strong>Electrode Material:</strong> Copper, GI, or Copper-bonded</li>
+        <li><strong>Soil Conditions:</strong> Rocky, sandy, or normal soil</li>
+        <li><strong>Project Location:</strong> Urban vs rural areas</li>
+        <li><strong>System Size:</strong> Single electrode vs multiple electrodes</li>
+        <li><strong>Labor Costs:</strong> Local market rates</li>
+      </ul>
+      
+      <h3>Price Breakdown 2024</h3>
+      <table class="w-full border-collapse border border-gray-300 my-6">
+        <thead>
+          <tr class="bg-gray-100">
+            <th class="border border-gray-300 px-4 py-3 text-left">Component</th>
+            <th class="border border-gray-300 px-4 py-3 text-left">Residential Cost</th>
+            <th class="border border-gray-300 px-4 py-3 text-left">Commercial Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-gray-300 px-4 py-3 font-semibold">Chemical Electrode</td>
+            <td class="border border-gray-300 px-4 py-3">₹1,500 - ₹3,000</td>
+            <td class="border border-gray-300 px-4 py-3">₹2,500 - ₹5,000</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="border border-gray-300 px-4 py-3 font-semibold">Backfill Compound</td>
+            <td class="border border-gray-300 px-4 py-3">₹800 - ₹1,500</td>
+            <td class="border border-gray-300 px-4 py-3">₹1,200 - ₹2,000</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-4 py-3 font-semibold">Labor & Installation</td>
+            <td class="border border-gray-300 px-4 py-3">₹1,000 - ₹2,000</td>
+            <td class="border border-gray-300 px-4 py-3">₹2,000 - ₹4,000</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="border border-gray-300 px-4 py-3 font-semibold">Total Cost</td>
+            <td class="border border-gray-300 px-4 py-3">₹3,300 - ₹6,500</td>
+            <td class="border border-gray-300 px-4 py-3">₹5,700 - ₹11,000</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <div class="bg-blue-50 p-6 rounded-lg my-6">
+        <h4 class="text-xl font-semibold mb-3">Get Exact Chemical Earthing Price</h4>
+        <p>Contact us for site-specific <strong>chemical earthing price</strong> quotation:</p>
+        <div class="flex flex-col sm:flex-row gap-4 mt-4">
+          <a href="tel:+919667846784" class="bg-blue-600 text-white px-6 py-2 rounded text-center">Call for Quote</a>
+          <a href="https://wa.me/919667846784" class="bg-green-600 text-white px-6 py-2 rounded text-center">WhatsApp Price</a>
+        </div>
+      </div>
+    `,
+    date: 'January 20, 2024',
+    readTime: '8 min read',
+    category: 'Price Guide'
+  },
+
+  'chemical-earthing-procedure-installation': {
+    title: 'Chemical Earthing Procedure - Step-by-Step Installation & Earth Pit Construction Guide',
+    description: 'Complete chemical earthing procedure with diagrams. Learn earth pit installation, testing methods, and IS standard compliance for perfect earthing system installation.',
+    content: `
+      <h2>Chemical Earthing Procedure - Complete Installation Guide</h2>
+      <p>Proper <strong>chemical earthing procedure</strong> ensures long-term electrical safety and system reliability. Follow this step-by-step guide for perfect installation.</p>
+      
+      <h3>Step-by-Step Installation Procedure</h3>
+      <h4>1. Site Selection and Preparation</h4>
+      <ul>
+        <li>Choose location with permanent moisture</li>
+        <li>Avoid areas with underground utilities</li>
+        <li>Mark pit location as per design</li>
+        <li>Ensure proper access for equipment</li>
+      </ul>
+      
+      <h4>2. Earth Pit Excavation</h4>
+      <ul>
+        <li>Excavate pit 150mm x 150mm x 3000mm</li>
+        <li>Maintain vertical sides</li>
+        <li>Remove stones and debris</li>
+        <li>Prepare bottom with sand layer</li>
+      </ul>
+      
+      <h3>Material Requirements</h3>
+      <table class="w-full border-collapse border border-gray-300 my-6">
+        <thead>
+          <tr class="bg-gray-100">
+            <th class="border border-gray-300 px-4 py-3 text-left">Material</th>
+            <th class="border border-gray-300 px-4 py-3 text-left">Specification</th>
+            <th class="border border-gray-300 px-4 py-3 text-left">Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-gray-300 px-4 py-3 font-semibold">Chemical Electrode</td>
+            <td class="border border-gray-300 px-4 py-3">Copper/GI, 3m length</td>
+            <td class="border border-gray-300 px-4 py-3">1 no.</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="border border-gray-300 px-4 py-3 font-semibold">Backfill Compound</td>
+            <td class="border border-gray-300 px-4 py-3">Bentonite/Marconite</td>
+            <td class="border border-gray-300 px-4 py-3">25kg</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-4 py-3 font-semibold">Water</td>
+            <td class="border border-gray-300 px-4 py-3">Clean water</td>
+            <td class="border border-gray-300 px-4 py-3">15 liters</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <div class="bg-green-50 p-6 rounded-lg my-6">
+        <h4 class="text-xl font-semibold mb-3">Professional Installation Services</h4>
+        <p>Need expert help with <strong>chemical earthing procedure</strong>?</p>
+        <div class="flex flex-col sm:flex-row gap-4 mt-4">
+          <a href="tel:+919667846784" class="bg-blue-600 text-white px-6 py-2 rounded text-center">Call for Installation</a>
+          <a href="/contact" class="bg-green-600 text-white px-6 py-2 rounded text-center">Free Site Survey</a>
+        </div>
+      </div>
+    `,
+    date: 'January 18, 2024',
+    readTime: '10 min read',
+    category: 'Installation'
+  },
+
+  'chemical-earthing-vs-gel-earthing': {
+    title: 'Chemical Earthing vs Gel Earthing: Which is Better? Price & Performance Comparison 2024',
+    description: 'Detailed comparison between chemical earthing and gel earthing systems. Understand differences in cost, performance, installation, and ideal applications.',
+    content: `
+      <h2>Chemical Earthing vs Gel Earthing - Complete Comparison 2024</h2>
+      <p>Choosing between <strong>chemical earthing vs gel earthing</strong> depends on project requirements, budget, and soil conditions. This detailed comparison helps you make the right choice.</p>
+      
+      <h3>Key Differences</h3>
+      <table class="w-full border-collapse border border-gray-300 my-6">
+        <thead>
+          <tr class="bg-gray-100">
+            <th class="border border-gray-300 px-4 py-3 text-left">Parameter</th>
+            <th class="border border-gray-300 px-4 py-3 text-left">Chemical Earthing</th>
+            <th class="border border-gray-300 px-4 py-3 text-left">Gel Earthing</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-gray-300 px-4 py-3 font-semibold">Initial Cost</td>
+            <td class="border border-gray-300 px-4 py-3">₹4,000 - ₹8,000</td>
+            <td class="border border-gray-300 px-4 py-3">₹5,000 - ₹10,000</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="border border-gray-300 px-4 py-3 font-semibold">Maintenance</td>
+            <td class="border border-gray-300 px-4 py-3">Zero maintenance</td>
+            <td class="border border-gray-300 px-4 py-3">Zero maintenance</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-4 py-3 font-semibold">Lifespan</td>
+            <td class="border border-gray-300 px-4 py-3">15+ years</td>
+            <td class="border border-gray-300 px-4 py-3">20+ years</td>
+          </tr>
+        </tbody>
+      </table>
+    `,
+    date: 'January 15, 2024',
+    readTime: '7 min read',
+    category: 'Comparison'
+  },
+
+  'earthing-material-list-specifications': {
+    title: 'Complete Earthing Material List & Specifications - Chemical, Pipe & Plate Earthing',
+    description: 'Get complete earthing material list for chemical earthing, pipe earthing, and plate earthing systems. Specifications, standards, and quality guidelines.',
+    content: `
+      <h2>Complete Earthing Material List & Specifications</h2>
+      <p>Proper material selection is crucial for effective earthing systems. This guide provides complete <strong>earthing material list</strong> for all types of earthing.</p>
+      
+      <h3>Chemical Earthing Materials</h3>
+      <ul>
+        <li>Chemical electrode (Copper/GI)</li>
+        <li>Backfill compound (Bentonite/Marconite)</li>
+        <li>Earth enhancement material</li>
+        <li>Connection accessories</li>
+      </ul>
+    `,
+    date: 'January 12, 2024',
+    readTime: '9 min read',
+    category: 'Materials'
+  },
+
+  'house-earthing-cost-india': {
+    title: 'Cost of Earthing a House in India 2024 - Complete Price Breakdown',
+    description: 'Detailed cost analysis for house earthing in India. Get chemical earthing price, labor costs, and budget planning for residential electrical safety.',
+    content: `
+      <h2>Cost of Earthing a House in India 2024</h2>
+      <p>Planning <strong>house earthing cost</strong> in India? Get complete price breakdown for residential earthing systems.</p>
+      
+      <h3>Residential Earthing Cost</h3>
+      <ul>
+        <li>Chemical Earthing: ₹3,500 - ₹7,000</li>
+        <li>Pipe Earthing: ₹2,500 - ₹5,000</li>
+        <li>Plate Earthing: ₹4,000 - ₹8,000</li>
+      </ul>
+    `,
+    date: 'January 10, 2024',
+    readTime: '6 min read',
+    category: 'Residential'
+  },
+
+  'industrial-earthing-requirements': {
+    title: 'Industrial Earthing Requirements & Specifications for Factories & Plants',
+    description: 'Complete guide to industrial earthing requirements, specifications, and compliance standards for factories, manufacturing plants, and commercial buildings.',
+    content: `
+      <h2>Industrial Earthing Requirements & Specifications</h2>
+      <p><strong>Industrial earthing requirements</strong> are more stringent than residential systems. Understand the specifications for factories and plants.</p>
+      
+      <h3>Key Requirements</h3>
+      <ul>
+        <li>Earth resistance: ≤ 1 Ω</li>
+        <li>Multiple electrode systems</li>
+        <li>Regular testing and maintenance</li>
+        <li>Compliance with IS 3043</li>
+      </ul>
+    `,
+    date: 'January 08, 2024',
+    readTime: '8 min read',
+    category: 'Industrial'
+  },
 
   'earth-pit-installation-testing-procedure': {
     title: 'Earth Pit Installation & Testing Procedure - Complete Guide with Diagrams',
@@ -209,7 +418,7 @@ const blogPosts = {
   },
 
   'types-of-earthing-systems': {
-    title: 'Different Types of Earthing Systems - Chemical, Pipe, Plate & Rod Earthing',
+    title: 'Different Types of Earthing Systems - Chemical, Pipe, Plate & Rod Earthing Comparison',
     description: 'Complete guide to different types of earthing systems: chemical earthing, pipe earthing, plate earthing, and rod earthing. Comparison, applications, and selection guide.',
     content: `
       <h2>Different Types of Earthing Systems - Complete Comparison 2024</h2>
@@ -1320,7 +1529,6 @@ const blogPosts = {
     readTime: '10 min read',
     category: 'Materials'
   }
->>>>>>> d683034 (Initial commit: Add existing website project)
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
@@ -1328,33 +1536,22 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   
   if (!post) {
     return {
-<<<<<<< HEAD
-      title: 'Blog Post Not Found',
-=======
       title: 'Blog Post Not Found - Saanayo Electricals',
->>>>>>> d683034 (Initial commit: Add existing website project)
     }
   }
 
   return {
-<<<<<<< HEAD
-    title: post.title,
-=======
     title: `${post.title} - Saanayo Electricals`,
->>>>>>> d683034 (Initial commit: Add existing website project)
     description: post.description,
   }
 }
 
-<<<<<<< HEAD
-=======
 export async function generateStaticParams() {
   return Object.keys(blogPosts).map((slug) => ({
     slug: slug,
   }))
 }
 
->>>>>>> d683034 (Initial commit: Add existing website project)
 export default function BlogPost({ params }: { params: { slug: string } }) {
   const post = blogPosts[params.slug as keyof typeof blogPosts]
   
@@ -1362,17 +1559,6 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
     notFound()
   }
 
-<<<<<<< HEAD
-  return (
-    <div className="pt-20">
-      <article className="section-padding">
-        <div className="container-custom max-w-4xl">
-          <Link href="/blog" className="text-blue-600 hover:text-blue-700 mb-6 inline-block">
-            ← Back to Blog
-          </Link>
-          
-          <header className="mb-8">
-=======
   // Auto-inject ads into the content using the helper function
   const contentWithAds = injectAdsIntoContent(post.content)
 
@@ -1400,7 +1586,6 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
                 {post.category}
               </span>
             </div>
->>>>>>> d683034 (Initial commit: Add existing website project)
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               {post.title}
             </h1>
@@ -1411,12 +1596,6 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
             </div>
           </header>
 
-<<<<<<< HEAD
-          <div 
-            className="prose prose-lg max-w-none"
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          />
-=======
           <div className="bg-white rounded-2xl p-8 shadow-sm">
             {/* Content with auto-injected ads */}
             <div 
@@ -1450,7 +1629,6 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
               </div>
             </div>
           </div>
->>>>>>> d683034 (Initial commit: Add existing website project)
         </div>
       </article>
     </div>

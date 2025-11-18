@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { MapPin, Phone, Mail, Clock, Instagram, Twitter, Facebook } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock, Instagram, Twitter, Facebook, Shield, Calendar } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -11,7 +11,7 @@ export default function Footer() {
   }
 
   const handleWhatsApp = () => {
-    const message = "Hi, I'm interested in your electrical safety products. Please provide more information."
+    const message = "Hi, I'm interested in Sanaayo Electric's earthing solutions. Please provide more information."
     window.open(`https://wa.me/919667846784?text=${encodeURIComponent(message)}`, '_blank')
   }
 
@@ -21,6 +21,30 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-900 text-white">
+      {/* Company Credentials Banner */}
+      <div className="bg-gradient-to-r from-blue-600 to-green-600 py-4">
+        <div className="container-custom">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm">
+            <div className="flex items-center justify-center space-x-2">
+              <Shield className="w-4 h-4" />
+              <span>10 Years Warranty</span>
+            </div>
+            <div className="flex items-center justify-center space-x-2">
+              <Calendar className="w-4 h-4" />
+              <span>50+ Years Lifespan</span>
+            </div>
+            <div className="flex items-center justify-center space-x-2">
+              <span className="text-lg">🏢</span>
+              <span>Private Limited</span>
+            </div>
+            <div className="flex items-center justify-center space-x-2">
+              <span className="text-lg">📅</span>
+              <span>Est. 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Main Footer */}
       <div className="section-padding">
         <div className="container-custom">
@@ -29,22 +53,36 @@ export default function Footer() {
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
                 <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold">SE</span>
+                  <span className="text-white font-bold">SEI</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Saanayo Electricals</h3>
+                  <h3 className="text-xl font-bold">Sanaayo Electric Industries</h3>
                   <p className="text-gray-300">Powering Safety. Grounding Reliability.</p>
                 </div>
               </div>
               <p className="text-gray-300 mb-6 max-w-md">
-                Leading manufacturer and supplier of premium earthing and electrical safety solutions 
-                in Faridabad, India. Trusted by industries and homes nationwide.
+                Leading manufacturer and supplier of premium green earth electrode systems 
+                with conductive concrete technology. Trusted by industries and homes across India.
               </p>
               
+              {/* Company Credentials */}
+              <div className="bg-gray-800 rounded-lg p-4 mb-6">
+                <div className="grid grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <p className="text-gray-400">CIN</p>
+                    <p className="text-white">U43219HR2025PTC127630</p>
+                  </div>
+                  <div>
+                    <p className="text-gray-400">GSTIN</p>
+                    <p className="text-white">06ABPCS0518J1Z5</p>
+                  </div>
+                </div>
+              </div>
+
               {/* Social Media Links */}
               <div className="flex space-x-4 mb-6">
                 <a
-                  href="https://www.instagram.com/kasakuelectricalspvtltd/"
+                  href="https://www.instagram.com/sanaayoelectric/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gray-800 hover:bg-pink-600 text-white p-2 rounded-lg transition-colors duration-300"
@@ -53,7 +91,7 @@ export default function Footer() {
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://x.com/KasakuPvt"
+                  href="https://x.com/sanaayoelectric"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gray-800 hover:bg-blue-400 text-white p-2 rounded-lg transition-colors duration-300"
@@ -62,7 +100,7 @@ export default function Footer() {
                   <Twitter className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://www.facebook.com/people/Kasaku-Electricals-Pvt-Ltd/100086154097375/"
+                  href="https://www.facebook.com/sanaayoelectric/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gray-800 hover:bg-blue-600 text-white p-2 rounded-lg transition-colors duration-300"
@@ -104,19 +142,19 @@ export default function Footer() {
               <h4 className="text-lg font-semibold mb-6">Our Products</h4>
               <ul className="space-y-3 text-gray-300">
                 {[
-                  'Earthing Electrodes',
+                  'Green Earth Electrodes',
+                  'Chemical Earthing Systems',
                   'Copper Bonded Rods',
-                  'GI Earthing Pipes',
-                  'Chemical Earthing',
-                  'Lightning Arresters',
-                  'Electrical Panels',
-                  'Surge Protection',
-                  'Grounding Accessories'
+                  'GI Earthing Electrodes',
+                  'Maintenance-Free Earthing',
+                  'Lightning Protection',
+                  'Surge Protection Devices',
+                  'Earthing Accessories'
                 ].map((product) => (
                   <li key={product}>
                     <Link 
                       href="/products" 
-                      className="hover:text-primary-400 transition-colors"
+                      className="hover:text-primary-400 transition-colors block py-1"
                     >
                       {product}
                     </Link>
@@ -130,20 +168,21 @@ export default function Footer() {
               <h4 className="text-lg font-semibold mb-6">Contact Info</h4>
               <div className="space-y-4 text-gray-300">
                 <div className="flex items-start space-x-3">
-                  <MapPin className="w-5 h-5 mt-0.5 text-primary-400" />
+                  <MapPin className="w-5 h-5 mt-0.5 text-primary-400 flex-shrink-0" />
                   <div>
                     <a 
-                      href="https://maps.app.goo.gl/fSXcH9JaTYWkbDdY7"
+                      href="https://maps.google.com/maps?q=28.37758887579035,77.31972237533266&z=17"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-white transition-colors cursor-pointer block"
                     >
-                      <p>SCF-112, Sector 28</p>
-                      <p>Faridabad, Haryana - 121002</p>
+                      <p>Plot No. 5B/7, 2nd Floor</p>
+                      <p>Railway Road, NIT-5</p>
+                      <p>Faridabad, Haryana - 121001</p>
                       <p>India</p>
                       <p className="text-blue-400 text-sm mt-1 flex items-center space-x-1">
                         <span>📍</span>
-                        <span>View on Google Maps</span>
+                        <span>Get Directions</span>
                       </p>
                     </a>
                   </div>
@@ -156,9 +195,8 @@ export default function Footer() {
                   >
                     <Phone className="w-5 h-5 text-primary-400 flex-shrink-0" />
                     <div>
-                      <p>+91 9667846784</p>
-                      <p>+91 7838756681</p>
-                      <p>+91 8010628458</p>
+                      <p className="font-semibold">+91 9667846784</p>
+                      <p className="text-sm text-gray-400">Primary Contact</p>
                     </div>
                   </button>
                 </div>
@@ -169,26 +207,61 @@ export default function Footer() {
                     className="flex items-center space-x-3 hover:text-white transition-colors cursor-pointer w-full text-left"
                   >
                     <Mail className="w-5 h-5 text-primary-400 flex-shrink-0" />
-                    <span>saanayoelectricindustries@gmail.com</span>
-                  </button>
-                  <button 
-                    onClick={() => handleEmail('support@kasakuelectricals.com')}
-                    className="flex items-center space-x-3 hover:text-white transition-colors cursor-pointer w-full text-left"
-                  >
-                    <Mail className="w-5 h-5 text-primary-400 flex-shrink-0" />
-                    <span>support@kasakuelectricals.com</span>
+                    <div>
+                      <span>saanayoelectricindustries@gmail.com</span>
+                      <p className="text-sm text-gray-400">Primary Email</p>
+                    </div>
                   </button>
                 </div>
                 
-                <div className="flex items-center space-x-3">
-                  <Clock className="w-5 h-5 text-primary-400" />
+                <div className="flex items-start space-x-3">
+                  <Clock className="w-5 h-5 text-primary-400 mt-0.5 flex-shrink-0" />
                   <div>
-                    <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
-                    <p>Sat: 9:00 AM - 4:00 PM</p>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p>Saturday: 9:00 AM - 4:00 PM</p>
+                    <p className="text-sm text-gray-400">Sunday: Closed</p>
                   </div>
+                </div>
+
+                {/* Quick Actions */}
+                <div className="pt-4 space-y-2">
+                  <button
+                    onClick={handleWhatsApp}
+                    className="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2"
+                  >
+                    <span>💬</span>
+                    <span>Chat on WhatsApp</span>
+                  </button>
+                  <button
+                    onClick={() => handleCall('+919667846784')}
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2"
+                  >
+                    <span>📞</span>
+                    <span>Call Now</span>
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Services Quick Links */}
+      <div className="border-t border-gray-800 py-8">
+        <div className="container-custom">
+          <h4 className="text-lg font-semibold mb-6 text-center">Our Services</h4>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            {[
+              { name: 'Earthing Installation', icon: '🔧' },
+              { name: 'Site Survey', icon: '📊' },
+              { name: 'Testing & Certification', icon: '✅' },
+              { name: 'Maintenance', icon: '🛠️' }
+            ].map((service, index) => (
+              <div key={index} className="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition-colors">
+                <div className="text-2xl mb-2">{service.icon}</div>
+                <p className="text-sm font-medium">{service.name}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -197,15 +270,23 @@ export default function Footer() {
       <div className="border-t border-gray-800 py-6">
         <div className="container-custom">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400 text-sm">
-              © {currentYear} Saanayo Electricals Pvt Ltd. All rights reserved.
-            </p>
+            <div className="text-center md:text-left">
+              <p className="text-gray-400 text-sm">
+                © {currentYear} Sanaayo Electric Industries Pvt Ltd. All rights reserved.
+              </p>
+              <p className="text-gray-500 text-xs mt-1">
+                CIN: U43219HR2025PTC127630 | GSTIN: 06ABPCS0518J1Z5
+              </p>
+            </div>
             <div className="flex space-x-6 text-sm text-gray-400">
               <Link href="/privacy" className="hover:text-white transition-colors">
                 Privacy Policy
               </Link>
               <Link href="/terms" className="hover:text-white transition-colors">
                 Terms of Service
+              </Link>
+              <Link href="/sitemap" className="hover:text-white transition-colors">
+                Sitemap
               </Link>
             </div>
           </div>

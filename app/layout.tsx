@@ -9,11 +9,11 @@ const inter = Inter({
   display: 'swap',
 })
 
-// Primary keywords for Saanayo Electricals
+// Primary keywords for Sanaayo Electric Industries
 const primaryKeywords = [
   'earthing electrodes',
-  'earthing system', 
   'chemical earthing',
+  'green earth electrodes', 
   'copper bonded rods',
   'gi earthing pipes',
   'lightning protection',
@@ -21,39 +21,35 @@ const primaryKeywords = [
   'earthing manufacturer India',
   'electrical earthing',
   'earthing solutions',
-  'earthing electrodes manufacturer',
-  'copper earthing rods',
-  'gi earthing electrodes',
-  'chemical earthing system',
-  'lightning arresters',
-  'electrical panels',
-  'surge protection devices',
-  'grounding accessories',
+  'conductive concrete granules',
+  'maintenance free earthing',
+  'earthing system Faridabad',
   'electrical safety solutions',
-  'earthing system manufacturer India',
-  'lightning protection system',
-  'electrical safety equipment',
-  'industrial earthing solutions',
-  'electrical grounding system'
+  'industrial earthing',
+  'residential earthing',
+  'earthing installation',
+  'earth pit construction',
+  'earthing testing',
+  'lightning arresters',
+  'surge protection devices'
 ].join(', ')
 
-// ✅ UPDATE METADATA HERE:
 export const metadata: Metadata = {
   title: {
-    default: 'Earthing Electrodes Manufacturer in Faridabad | Chemical & Gel Earthing Systems',
-    template: '%s | Saanayo Electricals - Premium Earthing Solutions'
+    default: 'Sanaayo Electric Industries - Green Earth Electrodes & Chemical Earthing Systems',
+    template: '%s | Sanaayo Electric Industries'
   },
-  description: 'Leading earthing electrodes manufacturer in Faridabad. Premium chemical earthing, gel earthing, copper bonded rods & grounding systems. Get best prices with 15+ years warranty.',
+  description: 'Leading manufacturer of green earth electrodes with conductive concrete technology. Chemical earthing, maintenance-free systems with 10-year warranty, 50+ years lifespan. Serving Faridabad and Delhi NCR.',
   keywords: primaryKeywords,
-  authors: [{ name: 'Saanayo Electricals' }],
-  creator: 'Saanayo Electricals',
-  publisher: 'Saanayo Electricals',
+  authors: [{ name: 'Sanaayo Electric Industries' }],
+  creator: 'Sanaayo Electric Industries',
+  publisher: 'Sanaayo Electric Industries',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://saanayoelectricals.com'),
+  metadataBase: new URL('https://sanaayoelectric.com'),
   alternates: {
     canonical: '/',
   },
@@ -71,60 +67,66 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://saanayoelectricals.com',
-    siteName: 'Saanayo Electricals',
-    title: 'Earthing Electrodes Manufacturer in Faridabad | Chemical & Gel Earthing',
-    description: 'Premium earthing electrodes, chemical earthing systems, copper bonded rods manufacturer in Faridabad.',
+    url: 'https://sanaayoelectric.com',
+    siteName: 'Sanaayo Electric Industries',
+    title: 'Sanaayo Electric Industries - Green Earth Electrodes & Chemical Earthing',
+    description: 'Premium green earth electrodes with conductive concrete technology. 10-year warranty, 50+ years lifespan.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/images/logo.png',
         width: 1200,
         height: 630,
-        alt: 'Saanayo Electricals - Earthing Electrodes Manufacturer',
+        alt: 'Sanaayo Electric Industries - Earthing Solutions',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Saanayo Electricals - Earthing Electrodes Manufacturer',
-    description: 'Premium electrical safety solutions in Faridabad',
-    images: ['/og-image.jpg'],
-    creator: '@saanayoelectricals',
+    title: 'Sanaayo Electric Industries - Premium Earthing Solutions',
+    description: 'Green earth electrodes with conductive concrete technology. 10-year warranty.',
+    images: ['/images/logo.png'],
   },
   verification: {
-    google: 'YOUR_GOOGLE_SEARCH_CONSOLE_CODE',
+    // google: 'YOUR_GOOGLE_SEARCH_CONSOLE_CODE',
   },
   category: 'Industrial & Electrical Equipment',
 }
 
-// ✅ UPDATE JSON-LD SCHEMA HERE:
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'ElectricalBusiness',
-  name: 'Saanayo Electricals - Earthing Electrodes Manufacturer',
-  description: 'Leading manufacturer of earthing electrodes, copper bonded rods, and chemical earthing systems in Faridabad, India',
-  url: 'https://saanayoelectricals.com',
+  '@type': 'Corporation',
+  name: 'Sanaayo Electric Industries Pvt Ltd',
+  description: 'Leading manufacturer of green earth electrodes with conductive concrete technology for earthing and grounding systems',
+  url: 'https://sanaayoelectric.com',
   telephone: '+91-9667846784',
   email: 'saanayoelectricindustries@gmail.com',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'SCF-112, Sector 28',
+    streetAddress: 'Plot No. 5B/7, 2nd Floor, Railway Road, NIT-5',
     addressLocality: 'Faridabad',
     addressRegion: 'Haryana',
-    postalCode: '121002',
+    postalCode: '121001',
     addressCountry: 'IN'
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: '28.4069',
-    longitude: '77.3180'
+    latitude: '28.377589',
+    longitude: '77.319722'
   },
   openingHours: [
     'Mo-Fr 09:00-18:00',
     'Sa 09:00-16:00'
   ],
-  priceRange: '₹₹',
-  areaServed: 'India',
+  foundingDate: '2025-01-17',
+  legalName: 'Sanaayo Electric Industries Private Limited',
+  taxID: '06ABPCS0518J1Z5',
+  knowsAbout: [
+    'Earthing Systems',
+    'Electrical Safety',
+    'Grounding Solutions',
+    'Chemical Earthing',
+    'Lightning Protection'
+  ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Earthing and Electrical Safety Products',
@@ -133,16 +135,8 @@ const jsonLd = {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Product',
-          name: 'Earthing Electrodes',
-          description: 'GI and Copper Earthing Electrodes for electrical grounding systems'
-        }
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Product',
-          name: 'Copper Bonded Rods',
-          description: 'Premium copper bonded earthing rods with 250-micron coating'
+          name: 'Green Earth Electrodes',
+          description: 'Advanced earthing electrodes with conductive concrete granule technology'
         }
       },
       {
@@ -157,25 +151,34 @@ const jsonLd = {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Product',
-          name: 'GI Earthing Pipes',
-          description: 'Heavy-duty GI earthing pipes for industrial applications'
+          name: 'Copper Bonded Rods',
+          description: 'Premium copper bonded earthing rods with 250-micron coating'
         }
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Product',
-          name: 'Lightning Arresters',
-          description: 'Lightning protection systems and surge protection devices'
+          name: 'GI Earthing Electrodes',
+          description: 'Heavy-duty GI earthing electrodes for industrial applications'
+        }
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Earthing Installation',
+          description: 'Professional earthing system installation and testing services'
         }
       }
     ]
   },
-  sameAs: [
-    'https://www.instagram.com/kasakuelectricalspvtltd/',
-    'https://x.com/KasakuPvt',
-    'https://www.facebook.com/people/Kasaku-Electricals-Pvt-Ltd/100086154097375/'
-  ]
+  areaServed: 'India',
+  brand: {
+    '@type': 'Brand',
+    name: 'Sanaayo Electric',
+    slogan: 'Powering Safety. Grounding Reliability.'
+  }
 }
 
 export default function RootLayout({
@@ -186,32 +189,42 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* ✅ GOOGLE ADSENSE META TAG */}
+        {/* Google AdSense Meta Tag */}
         <meta name="google-adsense-account" content="ca-pub-8120935387035949" />
         
-        {/* ✅ JSON-LD STRUCTURED DATA - This stays in the head */}
+        {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <link rel="canonical" href="https://saanayoelectricals.com" />
-        <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_CODE" />
-        <meta name="geo.region" content="IN-HR" />
-        <meta name="geo.placename" content="Faridabad" />
-        <meta name="geo.position" content="28.40689987576518;77.3154119753337" />
-        <meta name="ICBM" content="28.40689987576518, 77.3154119753337" />
-        <meta name="theme-color" content="#2563eb" />
-        <link rel="icon" href="/favicon.ico" />
+        
+        {/* Favicon Links - FIXED THE TYPO */}
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         
-        {/* Preload critical resources for better performance */}
+        {/* Additional Meta Tags */}
+        <link rel="canonical" href="https://sanaayoelectric.com" />
+        <meta name="geo.region" content="IN-HR" />
+        <meta name="geo.placename" content="Faridabad" />
+        <meta name="geo.position" content="28.377589;77.319722" />
+        <meta name="ICBM" content="28.377589, 77.319722" />
+        <meta name="theme-color" content="#2563eb" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        {/* Company Information */}
+        <meta name="company" content="Sanaayo Electric Industries Pvt Ltd" />
+        <meta name="incorporation-date" content="2025-01-17" />
+        <meta name="cin" content="U43219HR2025PTC127630" />
+        <meta name="gstin" content="06ABPCS0518J1Z5" />
+        
+        {/* Preload critical resources */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         
-        {/* ✅ ADSENSE COMPONENT */}
+        {/* AdSense Component */}
         <AdSense />
       </head>
       <body className={inter.className}>

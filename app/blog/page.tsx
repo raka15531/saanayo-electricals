@@ -2,61 +2,13 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-<<<<<<< HEAD
-  title: 'Earthing Blog | Chemical vs Gel Earthing, Installation Guides & Tips',
-  description: 'Expert articles on earthing systems, chemical vs gel earthing comparison, installation guides, and electrical safety tips from industry professionals.',
-  keywords: 'earthing blog, chemical earthing vs gel earthing, earthing installation guide, electrical safety tips, earthing electrode selection',
-=======
   title: 'Chemical Earthing Price & Installation Guide 2024 | Earthing Blog',
   description: 'Get complete chemical earthing price, installation cost, procedure & specifications. Expert guides on chemical earthing systems, earth pit construction, and earthing materials in India.',
   keywords: 'chemical earthing price, cost of earthing a house in india, chemical earthing cost, earth pit installation, earthing kit price, chemical earthing procedure, earthing pit material, chemical earthing electrode, types of chemical earthing, pipe earthing details, earth pit testing procedure, industrial earthing, gi electrode, earthing chemical, chemical earth pit',
->>>>>>> d683034 (Initial commit: Add existing website project)
 }
 
 const blogPosts = [
   {
-<<<<<<< HEAD
-    slug: 'what-is-gel-earthing',
-    title: 'What is Gel Earthing? Benefits and Installation Process',
-    description: 'Complete guide to gel earthing systems, their advantages over traditional earthing, and proper installation methods.',
-    date: '2024-01-15',
-    readTime: '5 min read'
-  },
-  {
-    slug: 'chemical-vs-gel-earthing',
-    title: 'Chemical Earthing vs Gel Earthing: Which is Better?',
-    description: 'Detailed comparison between chemical earthing and gel earthing systems for different applications and soil conditions.',
-    date: '2024-01-10',
-    readTime: '7 min read'
-  },
-  {
-    slug: 'select-best-earthing-electrode',
-    title: 'How to Select the Best Earthing Electrode for Your Project',
-    description: 'Expert tips on choosing the right earthing electrode based on soil conditions, application, and budget requirements.',
-    date: '2024-01-05',
-    readTime: '6 min read'
-  },
-  {
-    slug: 'copper-bonded-rod-manufacturers',
-    title: 'Best Copper Bonded Rod Manufacturers in India - Quality Guide',
-    description: 'Comprehensive guide to identifying quality copper bonded rods and top manufacturers in India.',
-    date: '2024-01-01',
-    readTime: '8 min read'
-  },
-  {
-    slug: 'earthing-protects-home-surges',
-    title: 'How Proper Earthing Protects Your Home from Electrical Surges',
-    description: 'Understand how earthing systems safeguard your home appliances and electrical systems from voltage surges.',
-    date: '2023-12-28',
-    readTime: '4 min read'
-  },
-  {
-    slug: 'industrial-earthing-requirements',
-    title: 'Earthing Requirements for Industrial Electrical Panels',
-    description: 'Complete guide to earthing specifications and requirements for industrial electrical panels and machinery.',
-    date: '2023-12-25',
-    readTime: '6 min read'
-=======
     slug: 'chemical-earthing-price-cost-india',
     title: 'Chemical Earthing Price 2024 - Complete Cost Guide for House & Industrial Projects',
     description: 'Get detailed chemical earthing price for residential and industrial projects. Learn about chemical earthing cost factors, material prices, and installation charges across India.',
@@ -105,84 +57,58 @@ const blogPosts = [
     category: 'Industrial'
   },
   {
-    slug: 'earth-pit-installation-testing',
+    slug: 'earth-pit-installation-testing-procedure',
     title: 'Earth Pit Installation & Testing Procedure - Complete Guide with Diagrams',
-    description: 'Step-by-step earth pit installation guide with testing procedures. Learn earth pit construction, material requirements, and resistance measurement methods.',
+    description: 'Step-by-step earth pit installation guide with testing procedures, diagrams, and compliance standards. Learn proper earth pit construction and maintenance.',
     date: '2024-01-05',
-    readTime: '7 min read',
+    readTime: '12 min read',
     category: 'Testing'
   },
   {
     slug: 'types-of-earthing-systems',
     title: 'Different Types of Earthing Systems - Chemical, Pipe, Plate & Rod Earthing Comparison',
-    description: 'Comprehensive guide to different types of earthing systems. Understand chemical earthing, pipe earthing, plate earthing, and their applications.',
+    description: 'Complete guide to different types of earthing systems: chemical earthing, pipe earthing, plate earthing, and rod earthing. Comparison, applications, and selection guide.',
     date: '2024-01-03',
-    readTime: '6 min read',
+    readTime: '10 min read',
     category: 'Systems'
   },
   {
-    slug: 'chemical-earthing-specifications-standards',
+    slug: 'chemical-earthing-specifications-is-standards',
     title: 'Chemical Earthing Specifications & IS Standards - Complete Technical Guide',
-    description: 'Detailed chemical earthing specifications as per IS 3043 standards. Electrode sizes, backfill materials, resistance requirements, and quality parameters.',
+    description: 'Complete technical guide to chemical earthing specifications, IS standards, material requirements, and compliance guidelines for electrical earthing systems.',
     date: '2024-01-01',
     readTime: '8 min read',
     category: 'Standards'
   },
   {
-    slug: 'pipe-earthing-details-material',
+    slug: 'pipe-earthing-details-material-list',
     title: 'Pipe Earthing Details & Material List - Complete Installation Guide',
-    description: 'Complete pipe earthing details with material list, installation depth, and maintenance requirements. Perfect for traditional earthing applications.',
+    description: 'Complete guide to pipe earthing installation with material list, specifications, and step-by-step procedure. Traditional earthing method with modern applications.',
     date: '2023-12-28',
-    readTime: '5 min read',
+    readTime: '9 min read',
     category: 'Pipe Earthing'
   },
   {
     slug: 'earthing-chemical-compound-guide',
     title: 'Earthing Chemical Compound Guide - Types, Properties & Application Methods',
-    description: 'Complete guide to earthing chemical compounds. Learn about bentonite, marconite, and other conductive materials for chemical earthing systems.',
+    description: 'Complete guide to earthing chemical compounds: types, properties, specifications, and application methods for chemical earthing systems.',
     date: '2023-12-25',
-    readTime: '6 min read',
+    readTime: '11 min read',
     category: 'Chemicals'
   },
   {
     slug: 'gi-electrode-earthing-systems',
     title: 'GI Electrode Earthing Systems - Specifications, Price & Installation Guide',
-    description: 'Complete guide to GI electrode earthing systems. Specifications, corrosion protection, installation methods, and cost-effective earthing solutions.',
+    description: 'Complete guide to GI electrode earthing systems: specifications, installation procedures, price analysis, and maintenance requirements.',
     date: '2023-12-22',
-    readTime: '5 min read',
+    readTime: '10 min read',
     category: 'GI Electrodes'
->>>>>>> d683034 (Initial commit: Add existing website project)
   }
 ]
 
 export default function BlogPage() {
   return (
     <div className="pt-20">
-<<<<<<< HEAD
-      <section className="section-padding bg-gradient-to-br from-primary-50 to-blue-100">
-        <div className="container-custom text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Earthing & Electrical Safety Blog
-          </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Expert insights, installation guides, and latest trends in earthing systems and electrical safety.
-          </p>
-        </div>
-      </section>
-
-      <section className="section-padding">
-        <div className="container-custom">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post) => (
-              <article key={post.slug} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="p-6">
-                  <div className="flex items-center text-sm text-gray-500 mb-3">
-                    <span>{post.date}</span>
-                    <span className="mx-2">•</span>
-                    <span>{post.readTime}</span>
-                  </div>
-                  <h2 className="text-xl font-semibold text-gray-900 mb-3 hover:text-blue-600 transition-colors">
-=======
       {/* Hero Section with High-Value Keywords */}
       <section className="section-padding bg-gradient-to-br from-blue-50 to-blue-100">
         <div className="container-custom text-center">
@@ -245,22 +171,10 @@ export default function BlogPage() {
                     <span className="text-sm text-gray-500">{post.readTime}</span>
                   </div>
                   <h2 className="text-xl font-semibold text-gray-900 mb-3 hover:text-blue-600 transition-colors line-clamp-2 group-hover:underline">
->>>>>>> d683034 (Initial commit: Add existing website project)
                     <Link href={`/blog/${post.slug}`}>
                       {post.title}
                     </Link>
                   </h2>
-<<<<<<< HEAD
-                  <p className="text-gray-600 mb-4">
-                    {post.description}
-                  </p>
-                  <Link 
-                    href={`/blog/${post.slug}`}
-                    className="text-blue-600 font-semibold hover:text-blue-700 transition-colors"
-                  >
-                    Read More →
-                  </Link>
-=======
                   <p className="text-gray-600 mb-4 text-sm line-clamp-3">
                     {post.description}
                   </p>
@@ -274,15 +188,12 @@ export default function BlogPage() {
                       <span>→</span>
                     </Link>
                   </div>
->>>>>>> d683034 (Initial commit: Add existing website project)
                 </div>
               </article>
             ))}
           </div>
         </div>
       </section>
-<<<<<<< HEAD
-=======
 
       {/* All Articles Grid */}
       <section className="section-padding bg-gray-50">
@@ -396,7 +307,6 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
->>>>>>> d683034 (Initial commit: Add existing website project)
     </div>
   )
 }

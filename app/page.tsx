@@ -5,37 +5,11 @@ import Link from 'next/link'
 import { ArrowRight, Shield, Zap, Award, Clock } from 'lucide-react'
 import ParticlesBackground from '../components/ParticlesBackground'
 import FAQSchema from '../components/FAQSchema'
-<<<<<<< HEAD
-=======
 import Image from 'next/image'
->>>>>>> d683034 (Initial commit: Add existing website project)
 
 const products = [
   {
     id: 1,
-<<<<<<< HEAD
-    name: 'Earthing Electrodes',
-    description: 'High-performance electrodes for optimal grounding systems with excellent conductivity',
-    features: ['High conductivity', 'Corrosion resistant', 'Long lifespan', 'Easy installation'],
-    image: '/images/earthing-electrodes.jpg',
-    specs: ['Material: Copper/GI', 'Size: 16mm-40mm', 'Length: 1m-3m']
-  },
-  {
-    id: 2,
-    name: 'Copper Bonded Rods',
-    description: 'Premium copper bonded rods ensuring superior earthing with 99.9% pure copper coating',
-    features: ['99.9% pure copper', 'Uniform coating', 'Excellent conductivity', 'Corrosion proof'],
-    image: '/images/copper-rods.jpg',
-    specs: ['Coating: 250 microns', 'Size: 14mm-25mm', 'Standards: IS 3043']
-  },
-  {
-    id: 3,
-    name: 'Chemical Earthing',
-    description: 'Advanced chemical earthing systems for enhanced performance and maintenance-free operation',
-    features: ['Low resistance', 'Maintenance-free', 'Long durability', 'Stable performance'],
-    image: '/images/chemical-earthing.jpg',
-    specs: ['Resistance: <1 ohm', 'Backfill: 25kg', 'Life: 15+ years']
-=======
     name: 'Chemical Earthing Systems',
     description: 'Premium chemical earthing systems with maintenance-free operation and stable ground resistance for optimal electrical safety',
     features: ['Low resistance <1 ohm', 'Maintenance-free operation', 'Long 15+ years durability', 'Stable performance in all seasons'],
@@ -81,7 +55,6 @@ const products = [
     features: ['Complete installation kit', 'All necessary components', 'Easy to install', 'Durable materials'],
     image: '/images/grounding-accessories.jpg',
     specs: ['Clamps: Copper/Brass', 'Connectors: Exothermic', 'Backfill: Chemical compound', 'Conductor: 25-185mm²']
->>>>>>> d683034 (Initial commit: Add existing website project)
   }
 ]
 
@@ -89,67 +62,27 @@ const features = [
   {
     icon: Shield,
     title: 'Quality Certified',
-<<<<<<< HEAD
-    description: 'All products meet international quality standards and certifications'
-=======
     description: 'All chemical earthing materials meet IS 3043 standards with proper earth pit testing'
->>>>>>> d683034 (Initial commit: Add existing website project)
   },
   {
     icon: Zap,
     title: 'High Performance',
-<<<<<<< HEAD
-    description: 'Engineered for maximum safety and optimal electrical conductivity'
-=======
     description: 'Engineered chemical earthing systems ensure <1 ohm resistance for maximum safety'
->>>>>>> d683034 (Initial commit: Add existing website project)
   },
   {
     icon: Award,
     title: 'Industry Expertise',
-<<<<<<< HEAD
-    description: 'Years of experience in manufacturing electrical safety solutions'
-=======
     description: '15+ years experience in chemical earthing installation and earth pit construction'
->>>>>>> d683034 (Initial commit: Add existing website project)
   },
   {
     icon: Clock,
     title: 'Quick Delivery',
-<<<<<<< HEAD
-    description: 'Fast and reliable delivery across India and international markets'
-=======
     description: 'Fast delivery of chemical earthing rods and materials across India'
->>>>>>> d683034 (Initial commit: Add existing website project)
   }
 ]
 
 const faqData = [
   {
-<<<<<<< HEAD
-    question: "What is chemical earthing and how does it work?",
-    answer: "Chemical earthing is an advanced earthing system that uses conductive chemical compounds around the electrode to maintain low soil resistance. The chemical compound absorbs moisture from the atmosphere and retains it, ensuring consistent conductivity regardless of weather conditions."
-  },
-  {
-    question: "What are the advantages of copper bonded rods?",
-    answer: "Copper bonded rods offer superior corrosion resistance, excellent electrical conductivity, and long lifespan. The 250-micron copper coating ensures uniform protection, making them ideal for harsh soil conditions and providing reliable earthing performance for years."
-  },
-  {
-    question: "How do I choose the right earthing system for my project?",
-    answer: "The choice depends on soil resistivity, project requirements, and budget. Chemical earthing is ideal for areas with high soil resistance, while copper bonded rods work well in normal conditions. Our experts can conduct soil testing and recommend the best solution for your specific needs."
-  },
-  {
-    question: "What maintenance is required for earthing systems?",
-    answer: "Chemical earthing systems are virtually maintenance-free. Traditional earthing may require periodic checking of resistance levels. We recommend annual inspections to ensure optimal performance and early detection of any issues."
-  },
-  {
-    question: "Do you provide installation services?",
-    answer: "Yes, we offer complete installation services along with product supply. Our experienced technicians ensure proper installation according to industry standards and provide comprehensive testing and certification."
-  },
-  {
-    question: "What is your delivery timeline?",
-    answer: "Standard products are typically delivered within 3-5 days. Custom solutions may take 7-10 days. We offer expedited shipping for urgent requirements and ensure timely delivery across India."
-=======
     question: "What is chemical earthing and how does the chemical earthing procedure work?",
     answer: "Chemical earthing is an advanced earthing system that uses special conductive chemical compounds around the electrode to maintain low soil resistance. The chemical earthing procedure involves digging an earth pit, installing the electrode with backfill compound, and proper earth pit testing to ensure <1 ohm resistance. This chemical earth pit system provides maintenance-free operation with stable performance."
   },
@@ -172,7 +105,6 @@ const faqData = [
   {
     question: "What maintenance is required for chemical earthing systems?",
     answer: "Chemical earthing systems are virtually maintenance-free due to the special backfill compound. We recommend annual earth pit testing to check resistance levels. The chemical earthing process ensures long-term stability without the need for regular watering or maintenance unlike traditional earthing methods."
->>>>>>> d683034 (Initial commit: Add existing website project)
   }
 ]
 
@@ -192,26 +124,11 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
               Premium{' '}
               <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-<<<<<<< HEAD
-                Electrical Safety
-=======
                 Chemical Earthing
->>>>>>> d683034 (Initial commit: Add existing website project)
               </span>{' '}
               Solutions
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
-<<<<<<< HEAD
-              Leading manufacturer of <strong>earthing electrodes</strong>, <strong>copper bonded rods</strong>, <strong>chemical earthing systems</strong>, and <strong>lightning protection equipment</strong> in Faridabad, India
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/products" className="btn-primary inline-flex items-center space-x-2 bg-white text-blue-900 hover:bg-blue-100">
-                <span>View Electrical Products</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-              <Link href="/contact" className="btn-secondary border-white text-white hover:bg-white hover:text-blue-900">
-                Get Free Consultation
-=======
               Leading <strong>chemical earthing manufacturer</strong> in Faridabad providing <strong>chemical earthing rods</strong>, <strong>earth pit installation</strong>, and complete <strong>earthing solutions</strong> at best <strong>chemical earthing price</strong>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -221,7 +138,6 @@ export default function Home() {
               </Link>
               <Link href="/contact" className="btn-secondary border-white text-white hover:bg-white hover:text-blue-900">
                 Get Chemical Earthing Price
->>>>>>> d683034 (Initial commit: Add existing website project)
               </Link>
             </div>
           </motion.div>
@@ -238,17 +154,10 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-<<<<<<< HEAD
-              Why Choose Saanayo Electricals?
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Trusted by industries and homeowners for reliable electrical safety solutions
-=======
               Why Choose Our Chemical Earthing Systems?
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Expert <strong>chemical earthing installation</strong> with proper <strong>earth pit testing</strong> and guaranteed performance
->>>>>>> d683034 (Initial commit: Add existing website project)
             </p>
           </motion.div>
 
@@ -286,16 +195,6 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-<<<<<<< HEAD
-              Featured Products
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              High-quality electrical safety products engineered for maximum protection
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-=======
               Chemical Earthing Products & Systems
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
@@ -304,7 +203,6 @@ export default function Home() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
->>>>>>> d683034 (Initial commit: Add existing website project)
             {products.map((product, index) => (
               <motion.div
                 key={product.name}
@@ -315,10 +213,6 @@ export default function Home() {
                 className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700"
               >
                 {/* Product Image */}
-<<<<<<< HEAD
-                <div className="h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center relative">
-                  <div className="text-6xl text-white opacity-80">⚡</div>
-=======
                 <div className="h-48 bg-gray-100 dark:bg-gray-600 relative overflow-hidden">
                   <Image 
                     src={product.image} 
@@ -338,7 +232,6 @@ export default function Home() {
                       `
                     }}
                   />
->>>>>>> d683034 (Initial commit: Add existing website project)
                   <div className="absolute bottom-4 right-4 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 text-white text-sm">
                     Featured
                   </div>
@@ -382,11 +275,7 @@ export default function Home() {
                   <div className="mb-6 p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
                     <div className="flex items-center justify-center space-x-2">
                       <span className="text-yellow-600 dark:text-yellow-400 font-semibold text-sm">
-<<<<<<< HEAD
-                        💰 For Pricing Contact for Best Offer
-=======
                         💰 Get Chemical Earthing Price Quote
->>>>>>> d683034 (Initial commit: Add existing website project)
                       </span>
                     </div>
                   </div>
@@ -400,16 +289,6 @@ export default function Home() {
                       View Details
                     </Link>
                     <button
-<<<<<<< HEAD
-                    onClick={() => {
-                        const message = `Hi, I'm interested in ${product.name}. Please provide more details and pricing.`
-                        window.open(`https://wa.me/919667846784?text=${encodeURIComponent(message)}`, '_blank')
-                    }}
-                    className="bg-green-600 hover:bg-green-700 text-white p-2 rounded-lg transition-colors cursor-pointer"
-                    title="Contact on WhatsApp"
-                    >
-                    💬
-=======
                       onClick={() => {
                           const message = `Hi, I'm interested in ${product.name}. Please provide chemical earthing price and specifications.`
                           window.open(`https://wa.me/919667846784?text=${encodeURIComponent(message)}`, '_blank')
@@ -418,7 +297,6 @@ export default function Home() {
                       title="Contact on WhatsApp"
                     >
                       <span className="text-sm">💬</span>
->>>>>>> d683034 (Initial commit: Add existing website project)
                     </button>
                   </div>
                 </div>
@@ -433,11 +311,7 @@ export default function Home() {
             className="text-center mt-12"
           >
             <Link href="/products" className="btn-primary inline-flex items-center space-x-2">
-<<<<<<< HEAD
-              <span>View All Products</span>
-=======
               <span>View All Chemical Earthing Products</span>
->>>>>>> d683034 (Initial commit: Add existing website project)
               <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>
@@ -448,51 +322,6 @@ export default function Home() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-<<<<<<< HEAD
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-              Premium Earthing Electrodes Manufacturer in Faridabad
-            </h2>
-            
-            <div className="prose prose-lg max-w-none">
-              <p className="text-gray-600 mb-6">
-                <strong>Saanayo Electricals</strong> is a leading <strong>earthing electrodes manufacturer in Faridabad</strong>, 
-                providing premium <strong>chemical earthing systems</strong>, <strong>gel earthing electrodes</strong>, and 
-                <strong>copper bonded rods</strong> for industrial, commercial, and residential applications.
-              </p>
-
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                Why Choose Our Earthing Solutions?
-              </h3>
-              
-              <ul className="text-gray-600 mb-6 space-y-2">
-                <li>• <strong>Chemical Earthing:</strong> Maintenance-free operation with stable ground resistance</li>
-                <li>• <strong>Gel Earthing:</strong> Advanced conductive gel for superior performance</li>
-                <li>• <strong>Copper Bonded Rods:</strong> 250-micron copper coating for excellent conductivity</li>
-                <li>• <strong>GI Earthing Electrodes:</strong> Cost-effective solution with corrosion resistance</li>
-              </ul>
-
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                Applications of Our Earthing Systems
-              </h3>
-              
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Industrial Applications</h4>
-                  <ul className="text-gray-600 text-sm space-y-1">
-                    <li>• Factories and manufacturing plants</li>
-                    <li>• Power substations</li>
-                    <li>• Telecommunication towers</li>
-                    <li>• Oil and gas industry</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Commercial & Residential</h4>
-                  <ul className="text-gray-600 text-sm space-y-1">
-                    <li>• High-rise buildings</li>
-                    <li>• Housing complexes</li>
-                    <li>• Hospitals and institutions</li>
-                    <li>• Data centers</li>
-=======
             <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">
               Chemical Earthing Manufacturer in Faridabad | Best Chemical Earthing Price
             </h1>
@@ -525,25 +354,10 @@ export default function Home() {
                     <li>• <strong>Earth Pit Installation</strong> - Professional services</li>
                     <li>• <strong>Earthing Plate Price</strong> - Competitive rates</li>
                     <li>• <strong>Earthing Chemical</strong> - Maintenance-free</li>
->>>>>>> d683034 (Initial commit: Add existing website project)
                   </ul>
                 </div>
               </div>
 
-<<<<<<< HEAD
-              <div className="bg-blue-50 rounded-xl p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Looking for Earthing Electrode Price?
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Get competitive pricing for <strong>chemical earthing electrode price</strong>, 
-                  <strong>gel earthing electrode price</strong>, and <strong>copper bonded rod price</strong>. 
-                  We offer the best rates in Faridabad with complete installation services.
-                </p>
-                <Link href="/contact" className="btn-primary">
-                  Get Price Quote
-                </Link>
-=======
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">
                 Chemical Earthing Price & Cost Analysis
               </h3>
@@ -609,7 +423,6 @@ export default function Home() {
                     Call for Earthing Cost: +91 9667846784
                   </a>
                 </div>
->>>>>>> d683034 (Initial commit: Add existing website project)
               </div>
             </div>
           </div>
@@ -621,17 +434,10 @@ export default function Home() {
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-<<<<<<< HEAD
-              { number: '500+', label: 'Projects Completed' },
-              { number: '5000+', label: 'Happy Clients' },
-              { number: '15+', label: 'Years Experience' },
-              { number: '24/7', label: 'Support' }
-=======
-              { number: '5000+', label: 'Chemica/Gel Earthing Projects' },
-              { number: '10000+', label: 'Earth Pit Installations' },
+              { number: '1000+', label: 'Chemical Earthing Projects' },
+              { number: '500+', label: 'Earth Pit Installations' },
               { number: '15+', label: 'Years Expertise' },
               { number: '24/7', label: 'Technical Support' }
->>>>>>> d683034 (Initial commit: Add existing website project)
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -658,17 +464,10 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-<<<<<<< HEAD
-              Frequently Asked Questions
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Get answers to common questions about our electrical safety products
-=======
               Chemical Earthing FAQs
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Common questions about <strong>chemical earthing price</strong>, <strong>installation</strong>, and <strong>maintenance</strong>
->>>>>>> d683034 (Initial commit: Add existing website project)
             </p>
           </motion.div>
 
@@ -702,38 +501,23 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-<<<<<<< HEAD
-              Ready to Secure Your Electrical Systems?
-            </h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              Get expert consultation and premium electrical safety solutions tailored to your needs
-=======
               Ready for Professional Chemical Earthing Installation?
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
               Get expert <strong>chemical earthing consultation</strong>, best <strong>chemical earthing price</strong>, and complete <strong>earth pit installation</strong> services
->>>>>>> d683034 (Initial commit: Add existing website project)
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="/contact" 
                 className="bg-white text-blue-900 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
               >
-<<<<<<< HEAD
-                Get Free Consultation
-=======
                 Get Chemical Earthing Price Quote
->>>>>>> d683034 (Initial commit: Add existing website project)
               </Link>
               <a 
                 href="tel:+919667846784"
                 className="border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg font-semibold transition-all duration-300"
               >
-<<<<<<< HEAD
-                Call Now: +91 9667846784
-=======
                 Call for Earthing Cost: +91 9667846784
->>>>>>> d683034 (Initial commit: Add existing website project)
               </a>
             </div>
           </motion.div>
