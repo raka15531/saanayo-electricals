@@ -161,7 +161,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
-    // Blog posts
+    /// Blog posts
     ...['what-is-gel-earthing', 'chemical-vs-gel-earthing', 'select-best-earthing-electrode', 
         'copper-bonded-rod-manufacturers', 'earthing-protects-home-surges', 'industrial-earthing-requirements']
       .map(slug => ({
