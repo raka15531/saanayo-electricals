@@ -1,8 +1,6 @@
-cat > public/robots.txt << 'EOF'
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
 
 Sitemap: https://www.sanaayoelectricals.in/sitemap.xml
-EOF
